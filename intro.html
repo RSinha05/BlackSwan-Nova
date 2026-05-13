@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKSWAN NOVA | Intro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050505;
+      --text: #ffffff;
+      --cyan: #5DCAA7;
+      --blue: #1D9E75;
+      --purple: #7F77DD;
+      --font-sans: 'Inter', sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #canvas-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 1.0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 4rem 3rem;
+      background: transparent;
+      backdrop-filter: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      max-width: 800px;
+      width: 90%;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .main-logo {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 1rem;
+      display: block;
+      border-radius: 16px;
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #fff, rgba(255,255,255,0.6));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 3.5rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    .tagline-hl {
+      color: var(--cyan);
+    }
+
+    .enter-btn {
+      font-family: var(--font-mono);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 36px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      border-radius: 6px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .enter-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+      transition: all 0.6s ease;
+    }
+
+    .enter-btn:hover::before {
+      left: 100%;
+    }
+
+    .enter-btn:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .enter-btn span {
+      position: relative;
+      z-index: 2;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .enter-btn:hover .arrow {
+      transform: translateX(6px);
+    }
+
+    .scanlines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(0,0,0,0.2)
+      );
+      background-size: 100% 4px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+
+    .vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, transparent 20%, #030303 100%);
+      z-index: 3;
+      pointer-events: none;
+    }
+    
+    .noise {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0.03;
+      z-index: 4;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .content { padding: 3rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+  <div class="noise"></div>
+
+  <div id="canvas-container">
+    <canvas id="gbmCanvas"></canvas>
+  </div>
+
+  <div class="content">
+    <img src="blackswan.png" alt="Blackswan Nova Logo" class="main-logo" />
+    <h1>BLACKSWAN NOVA</h1>
+    <div class="subtitle">Where uncertainty is <span class="tagline-hl">engineered</span> into insight.</div>
+    <a href="index.html" class="enter-btn">
+      <span>INITIALIZE ENGINE</span>
+      <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('gbmCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    // Geometric Brownian Motion Parameters
+    const numPaths = 14;
+    const pointsPerPath = 200;
+    let paths = [];
+    
+    // Background Models: Network Nodes
+    const numNodes = 40;
+    let nodes = [];
+    
+    // Background Models: Bar Charts
+    const numCharts = 6;
+    let charts = [];
+
+    function initPaths() {
+      paths = [];
+      for (let i = 0; i < numPaths; i++) {
+        const mu = (Math.random() - 0.5) * 0.001;
+        const sigma = 0.003 + Math.random() * 0.012;
+        const hue = 180 + Math.random() * 80; 
+        const lightness = 40 + Math.random() * 40;
+        const alpha = 0.3 + Math.random() * 0.5;
+        const color = `hsla(${hue}, 70%, ${lightness}%, ${alpha})`;
+        
+        let path = {
+          points: [height / 2 + (Math.random() - 0.5) * height * 0.6],
+          mu: mu, sigma: sigma, color: color,
+          yBase: height / 2 + (Math.random() - 0.5) * height * 0.3,
+          speed: 0.5 + Math.random() * 1.5
+        };
+        for (let j = 1; j < pointsPerPath; j++) {
+          path.points.push(nextGBMPoint(path.points[j-1], path.mu, path.sigma));
+        }
+        paths.push(path);
+      }
+      
+      nodes = [];
+      for(let i=0; i<numNodes; i++) {
+        nodes.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.6,
+          vy: (Math.random() - 0.5) * 0.6,
+          radius: Math.random() * 2 + 1
+        });
+      }
+      
+      charts = [];
+      for(let i=0; i<numCharts; i++) {
+        charts.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          w: 80 + Math.random() * 120,
+          h: 50 + Math.random() * 80,
+          bars: Array.from({length: 8 + Math.floor(Math.random() * 12)}, () => Math.random()),
+          alpha: 0.15 + Math.random() * 0.15
+        });
+      }
+    }
+
+    function randomNormal() {
+      let u = 0, v = 0;
+      while(u === 0) u = Math.random();
+      while(v === 0) v = Math.random();
+      return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+    }
+
+    function nextGBMPoint(S, mu, sigma) {
+      const drift = mu - (sigma * sigma) / 2;
+      const shock = sigma * randomNormal();
+      return S * Math.exp(drift + shock);
+    }
+
+    let frameCount = 0;
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      frameCount++;
+
+      // Draw faint grid
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      const gridSize = 80;
+      for (let x = 0; x < width; x += gridSize) {
+        ctx.moveTo(x, 0); ctx.lineTo(x, height);
+      }
+      for (let y = 0; y < height; y += gridSize) {
+        ctx.moveTo(0, y); ctx.lineTo(width, y);
+      }
+      ctx.stroke();
+
+      // Draw Background Floating Charts
+      charts.forEach(chart => {
+        chart.x -= 0.3; // slow drift
+        if(chart.x + chart.w < -50) chart.x = width + 50;
+        
+        const barW = chart.w / chart.bars.length;
+        ctx.fillStyle = `rgba(93, 202, 167, ${chart.alpha})`; // Cyanish bars
+        for(let i=0; i<chart.bars.length; i++) {
+          if(Math.random() < 0.03) chart.bars[i] = Math.max(0.1, Math.min(1, chart.bars[i] + (Math.random()-0.5)*0.3));
+          const bh = chart.bars[i] * chart.h;
+          ctx.fillRect(chart.x + i*barW + 1, chart.y + chart.h - bh, barW - 2, bh);
+        }
+        ctx.strokeStyle = `rgba(255, 255, 255, ${chart.alpha + 0.1})`;
+        ctx.strokeRect(chart.x, chart.y, chart.w, chart.h);
+      });
+
+      // Draw Network Nodes
+      ctx.strokeStyle = 'rgba(127, 119, 221, 0.4)'; // Purplish links
+      ctx.fillStyle = 'rgba(127, 119, 221, 0.6)';
+      ctx.lineWidth = 1.5;
+      nodes.forEach((node, i) => {
+        node.x += node.vx;
+        node.y += node.vy;
+        if(node.x < 0) node.x = width;
+        if(node.x > width) node.x = 0;
+        if(node.y < 0) node.y = height;
+        if(node.y > height) node.y = 0;
+        
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI*2);
+        ctx.fill();
+        
+        for(let j=i+1; j<nodes.length; j++) {
+          const dx = nodes[j].x - node.x;
+          const dy = nodes[j].y - node.y;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          if(dist < 130) {
+            ctx.beginPath();
+            ctx.globalAlpha = 1 - (dist/130);
+            ctx.moveTo(node.x, node.y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.stroke();
+            ctx.globalAlpha = 1.0;
+          }
+        }
+      });
+
+      // Draw Data Matrix (Hex strings)
+      if(frameCount % 10 === 0) {
+        ctx.font = '14px "JetBrains Mono", monospace';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+        for(let i=0; i<4; i++) {
+           const hex = Math.floor(Math.random()*16777215).toString(16).toUpperCase().padStart(6, '0');
+           ctx.fillText(`0x${hex}`, Math.random() * width, Math.random() * height);
+        }
+      }
+
+      // Draw GBM Paths
+      const sliceWidth = width / (pointsPerPath - 1);
+      paths.forEach(path => {
+        if (Math.random() < path.speed * 0.5) {
+          path.points.shift();
+          let lastVal = path.points[path.points.length - 1];
+          if (lastVal > height * 1.5 || lastVal < -height * 0.5 || isNaN(lastVal)) lastVal = path.yBase;
+          if (lastVal > height) path.mu -= 0.0001;
+          if (lastVal < 0) path.mu += 0.0001;
+          path.points.push(nextGBMPoint(lastVal, path.mu, path.sigma));
+        }
+        ctx.beginPath();
+        ctx.strokeStyle = path.color;
+        ctx.lineWidth = 1.5;
+        ctx.moveTo(0, path.points[0]);
+        for (let i = 1; i < path.points.length - 1; i++) {
+          const x = i * sliceWidth;
+          const y = path.points[i];
+          const nextX = (i + 1) * sliceWidth;
+          const nextY = path.points[i+1];
+          const xc = (x + nextX) / 2;
+          const yc = (y + nextY) / 2;
+          ctx.quadraticCurveTo(x, y, xc, yc);
+        }
+        ctx.stroke();
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    initPaths();
+    animate();
+  </script>
+</body>
+</html>

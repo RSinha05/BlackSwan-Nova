@@ -1,0 +1,955 @@
+ID,Name,Ticker,Asset Class,Annual Drift (mu),Annual Volatility (sig),Risk-Free Rate (rf),Base Price,Currency
+sensex,BSE SENSEX,SENSEX,indian-index,0.127,0.185,0.065,76664.21,₹
+nifty50,NIFTY 50,NIFTY50,indian-index,0.125,0.183,0.065,23897.95,₹
+bankex,BSE BANKEX,BSE-BANK.BO,indian-index,0.130,0.200,0.065,63188.31,₹
+niftybank,NIFTY BANK,^NSEBANK,indian-index,0.125,0.190,0.065,56089.75,₹
+reliance,Reliance Ind,RELIANCE,indian-stock,0.145,0.262,0.065,1327.80,₹
+aapl,Apple,AAPL,us-stock,0.212,0.295,0.045,270.47,$
+msft,Microsoft,MSFT,us-stock,0.198,0.278,0.045,420.37,$
+xauusd,Gold (XAU/USD),XAU/USD,forex,0.082,0.145,0.045,4738.20,$
+xagusd,Silver (XAG/USD),XAG/USD,forex,0.075,0.228,0.045,75.73,$
+digitide,Digitide Solutions Limited,DIGITIDE,indian-stock,0.219,0.534,0.065,5287.05,₹
+vijifin,Viji Finance Limited,VIJIFIN,indian-stock,0.197,0.208,0.065,8198.16,₹
+unitdspr,United Spirits Limited,UNITDSPR,indian-stock,0.087,0.182,0.065,1461.17,₹
+sepc,SEPC Limited,SEPC,indian-stock,0.168,0.205,0.065,1595.19,₹
+axisbank,Axis Bank Limited,AXISBANK,indian-stock,0.111,0.349,0.065,698.46,₹
+sonamltd,SONAM LIMITED,SONAMLTD,indian-stock,0.169,0.526,0.065,9136.24,₹
+onwardtec,Onward Technologies Limited,ONWARDTEC,indian-stock,0.172,0.186,0.065,5368.90,₹
+finkurve,Finkurve Financial Services Limited,FINKURVE,indian-stock,0.138,0.186,0.065,7249.71,₹
+jsl,Jindal Stainless Limited,JSL,indian-stock,0.155,0.286,0.065,5071.94,₹
+anuhphr,Anuh Pharma Limited,ANUHPHR,indian-stock,0.178,0.339,0.065,9403.15,₹
+swarajeng,Swaraj Engines Limited,SWARAJENG,indian-stock,0.105,0.520,0.065,5291.42,₹
+servotech,Servotech Renewable Power System Limited,SERVOTECH,indian-stock,0.114,0.409,0.065,2598.94,₹
+selmc,SEL Manufacturing Company Limited,SELMC,indian-stock,0.130,0.474,0.065,882.29,₹
+pfs,PTC India Financial Services Limited,PFS,indian-stock,0.214,0.350,0.065,2507.76,₹
+kesoramind,Kesoram Industries Limited,KESORAMIND,indian-stock,0.178,0.291,0.065,8297.81,₹
+cosmofirst,COSMO FIRST LIMITED,COSMOFIRST,indian-stock,0.091,0.547,0.065,6533.96,₹
+aaatech,AAA Technologies Limited,AAATECH,indian-stock,0.084,0.330,0.065,3833.98,₹
+aptecht,Aptech Limited,APTECHT,indian-stock,0.147,0.416,0.065,7058.17,₹
+iob,Indian Overseas Bank,IOB,indian-stock,0.092,0.493,0.065,6484.58,₹
+kritinut,Kriti Nutrients Limited,KRITINUT,indian-stock,0.126,0.542,0.065,9741.01,₹
+rallis,Rallis India Limited,RALLIS,indian-stock,0.205,0.520,0.065,2374.69,₹
+npst,Network People Services Technologies Limited,NPST,indian-stock,0.206,0.436,0.065,5711.16,₹
+bhel,Bharat Heavy Electricals Limited,BHEL,indian-stock,0.118,0.522,0.065,6875.84,₹
+brooks,Brooks Laboratories Limited,BROOKS,indian-stock,0.119,0.381,0.065,6615.28,₹
+kanchi,Kanchi Karpooram Limited,KANCHI,indian-stock,0.105,0.495,0.065,255.02,₹
+dhanuka,Dhanuka Agritech Limited,DHANUKA,indian-stock,0.109,0.233,0.065,8224.84,₹
+ivp,IVP Limited,IVP,indian-stock,0.195,0.524,0.065,3062.84,₹
+pigl,Power & Instrumentation (Gujarat) Limited,PIGL,indian-stock,0.159,0.390,0.065,8509.48,₹
+ttkprestig,TTK Prestige Limited,TTKPRESTIG,indian-stock,0.175,0.380,0.065,3900.08,₹
+lotusdev,Sri Lotus Developers and Realty Limited,LOTUSDEV,indian-stock,0.184,0.472,0.065,6924.17,₹
+donear,Donear Industries Limited,DONEAR,indian-stock,0.091,0.456,0.065,3524.01,₹
+eihotel,EIH Limited,EIHOTEL,indian-stock,0.094,0.266,0.065,852.58,₹
+waareeener,Waaree Energies Limited,WAAREEENER,indian-stock,0.165,0.407,0.065,5996.53,₹
+acc,ACC Limited,ACC,indian-stock,0.216,0.301,0.065,6377.82,₹
+tolins,Tolins Tyres Limited,TOLINS,indian-stock,0.190,0.347,0.065,2358.57,₹
+tmb,Tamilnad Mercantile Bank Limited,TMB,indian-stock,0.157,0.319,0.065,1938.80,₹
+krsnaa,Krsnaa Diagnostics Limited,KRSNAA,indian-stock,0.162,0.321,0.065,7744.46,₹
+msumi,Motherson Sumi Wiring India Limited,MSUMI,indian-stock,0.121,0.271,0.065,827.72,₹
+adanient,Adani Enterprises Limited,ADANIENT,indian-stock,0.118,0.321,0.065,7860.51,₹
+trent,Trent Limited,TRENT,indian-stock,0.102,0.324,0.065,3670.93,₹
+gvpil,GE Power India Limited,GVPIL,indian-stock,0.093,0.529,0.065,4502.89,₹
+mblinfra,MBL Infrastructure Limited,MBLINFRA,indian-stock,0.187,0.218,0.065,964.24,₹
+afil,Akme Fintrade (India) Limited,AFIL,indian-stock,0.140,0.386,0.065,5173.16,₹
+grwrhitech,Garware Hi-Tech Films Limited,GRWRHITECH,indian-stock,0.094,0.213,0.065,5586.78,₹
+gujthem,Gujarat Themis Biosyn Limited,GUJTHEM,indian-stock,0.164,0.470,0.065,8650.81,₹
+univphoto,Universus Photo Imagings Limited,UNIVPHOTO,indian-stock,0.082,0.333,0.065,7813.77,₹
+lxchem,Laxmi Organic Industries Limited,LXCHEM,indian-stock,0.181,0.387,0.065,9928.03,₹
+rhl,Robust Hotels Limited,RHL,indian-stock,0.114,0.373,0.065,6884.63,₹
+jublingrea,Jubilant Ingrevia Limited,JUBLINGREA,indian-stock,0.104,0.280,0.065,2757.23,₹
+dbeil,Deepak Builders & Engineers India Limited,DBEIL,indian-stock,0.100,0.242,0.065,2832.02,₹
+aiaeng,AIA Engineering Limited,AIAENG,indian-stock,0.122,0.470,0.065,3675.14,₹
+madrasfert,Madras Fertilizers Limited,MADRASFERT,indian-stock,0.212,0.447,0.065,5008.44,₹
+goclcorp,GOCL Corporation Limited,GOCLCORP,indian-stock,0.166,0.349,0.065,1441.35,₹
+concordbio,Concord Biotech Limited,CONCORDBIO,indian-stock,0.081,0.326,0.065,8431.97,₹
+godrejagro,Godrej Agrovet Limited,GODREJAGRO,indian-stock,0.133,0.499,0.065,4458.21,₹
+carboruniv,Carborundum Universal Limited,CARBORUNIV,indian-stock,0.140,0.485,0.065,6545.26,₹
+vishnu,Vishnu Chemicals Limited,VISHNU,indian-stock,0.163,0.291,0.065,6071.79,₹
+asal,Automotive Stampings and Assemblies Limited,ASAL,indian-stock,0.177,0.357,0.065,1858.61,₹
+salzerelec,Salzer Electronics Limited,SALZERELEC,indian-stock,0.136,0.298,0.065,7375.26,₹
+v2retail,V2 Retail Limited,V2RETAIL,indian-stock,0.169,0.538,0.065,7841.55,₹
+premier,Premier Limited,PREMIER,indian-stock,0.126,0.284,0.065,7880.08,₹
+gipcl,Gujarat Industries Power Company Limited,GIPCL,indian-stock,0.131,0.525,0.065,2078.02,₹
+vikaseco,Vikas EcoTech Limited,VIKASECO,indian-stock,0.220,0.247,0.065,7699.42,₹
+heranba,Heranba Industries Limited,HERANBA,indian-stock,0.084,0.449,0.065,9435.45,₹
+jiofin,Jio Financial Services Limited,JIOFIN,indian-stock,0.109,0.475,0.065,8329.69,₹
+pittieng,Pitti Engineering Limited,PITTIENG,indian-stock,0.090,0.494,0.065,7970.95,₹
+vipind,VIP Industries Limited,VIPIND,indian-stock,0.174,0.231,0.065,3098.04,₹
+inoxindia,INOX India Limited,INOXINDIA,indian-stock,0.115,0.237,0.065,4288.97,₹
+ajmera,Ajmera Realty & Infra India Limited,AJMERA,indian-stock,0.133,0.346,0.065,6019.55,₹
+chembondch,Chembond Chemicals Limited,CHEMBONDCH,indian-stock,0.162,0.378,0.065,9242.61,₹
+cccl,Consolidated Construction Consortium Limited,CCCL,indian-stock,0.202,0.335,0.065,463.98,₹
+lalpathlab,Dr. Lal Path Labs Ltd.,LALPATHLAB,indian-stock,0.216,0.440,0.065,8141.74,₹
+balaxi,BALAXI PHARMACEUTICALS LIMITED,BALAXI,indian-stock,0.163,0.518,0.065,1182.76,₹
+atl,Allcargo Terminals Limited,ATL,indian-stock,0.115,0.426,0.065,1746.75,₹
+setco,Setco Automotive Limited,SETCO,indian-stock,0.166,0.388,0.065,6485.81,₹
+ramapho,Rama Phosphates Limited,RAMAPHO,indian-stock,0.171,0.538,0.065,3382.81,₹
+avroind,AVRO INDIA LIMITED,AVROIND,indian-stock,0.191,0.219,0.065,1076.20,₹
+brigade,Brigade Enterprises Limited,BRIGADE,indian-stock,0.111,0.456,0.065,5624.13,₹
+maxestates,Max Estates Limited,MAXESTATES,indian-stock,0.176,0.262,0.065,3803.78,₹
+jkipl,Jinkushal Industries Limited,JKIPL,indian-stock,0.145,0.431,0.065,6935.33,₹
+pngjl,P N Gadgil Jewellers Limited,PNGJL,indian-stock,0.101,0.549,0.065,4879.43,₹
+dpwires,D P Wires Limited,DPWIRES,indian-stock,0.121,0.521,0.065,949.96,₹
+thomascott,Thomas Scott (India) Limited,THOMASCOTT,indian-stock,0.196,0.450,0.065,3548.45,₹
+blkashyap,B. L. Kashyap and Sons Limited,BLKASHYAP,indian-stock,0.128,0.470,0.065,5259.04,₹
+zenithstl,Zenith Steel Pipes & Industries Limited,ZENITHSTL,indian-stock,0.129,0.216,0.065,7247.74,₹
+asterdm,Aster DM Healthcare Limited,ASTERDM,indian-stock,0.143,0.205,0.065,542.36,₹
+banarbeads,Banaras Beads Limited,BANARBEADS,indian-stock,0.180,0.188,0.065,3496.47,₹
+hbesd,HB Estate Developers Limited,HBESD,indian-stock,0.095,0.476,0.065,9306.23,₹
+sedemac,SEDEMAC Mechatronics Limited,SEDEMAC,indian-stock,0.184,0.371,0.065,5563.91,₹
+salasar,Salasar Techno Engineering Limited,SALASAR,indian-stock,0.126,0.338,0.065,4674.34,₹
+vmm,Vishal Mega Mart Limited,VMM,indian-stock,0.192,0.413,0.065,1945.23,₹
+emamiltd,Emami Limited,EMAMILTD,indian-stock,0.172,0.326,0.065,7400.14,₹
+tijaria,Tijaria Polypipes Limited,TIJARIA,indian-stock,0.204,0.346,0.065,4352.57,₹
+brnl,Bharat Road Network Limited,BRNL,indian-stock,0.081,0.259,0.065,2855.61,₹
+route,ROUTE MOBILE LIMITED,ROUTE,indian-stock,0.179,0.475,0.065,5815.74,₹
+obcl,Orissa Bengal Carrier Limited,OBCL,indian-stock,0.192,0.379,0.065,3721.35,₹
+aurionpro,Aurionpro Solutions Limited,AURIONPRO,indian-stock,0.108,0.222,0.065,6739.94,₹
+jaykay,Jaykay Enterprises Limited,JAYKAY,indian-stock,0.149,0.537,0.065,3202.70,₹
+nimbsproj,Nimbus Projects Limited,NIMBSPROJ,indian-stock,0.134,0.325,0.065,1230.90,₹
+haldyngl,Haldyn Glass Limited,HALDYNGL,indian-stock,0.129,0.349,0.065,1808.02,₹
+jainrec,Jain Resource Recycling Limited,JAINREC,indian-stock,0.174,0.476,0.065,9194.96,₹
+mcx,Multi Commodity Exchange of India Limited,MCX,indian-stock,0.163,0.429,0.065,3200.54,₹
+jwl,Jupiter Wagons Limited,JWL,indian-stock,0.113,0.223,0.065,3795.73,₹
+sundrop,Sundrop Brands Limited,SUNDROP,indian-stock,0.100,0.324,0.065,6004.62,₹
+lloydsengg,LLOYDS ENGINEERING WORKS LIMITED,LLOYDSENGG,indian-stock,0.160,0.337,0.065,4918.04,₹
+ninsys,NINtec Systems Limited,NINSYS,indian-stock,0.155,0.520,0.065,9313.88,₹
+kamopaints,Kamdhenu Ventures Limited,KAMOPAINTS,indian-stock,0.104,0.242,0.065,2959.46,₹
+teamlease,Teamlease Services Limited,TEAMLEASE,indian-stock,0.106,0.492,0.065,6232.16,₹
+nitiraj,Nitiraj Engineers Limited,NITIRAJ,indian-stock,0.201,0.532,0.065,4897.63,₹
+cera,Cera Sanitaryware Limited,CERA,indian-stock,0.107,0.322,0.065,5659.66,₹
+vindhyatel,Vindhya Telelinks Limited,VINDHYATEL,indian-stock,0.171,0.331,0.065,4968.09,₹
+colpal,Colgate Palmolive (India) Limited,COLPAL,indian-stock,0.179,0.344,0.065,1755.81,₹
+paisalo,Paisalo Digital Limited,PAISALO,indian-stock,0.159,0.474,0.065,2283.24,₹
+wheels,Wheels India Limited,WHEELS,indian-stock,0.085,0.263,0.065,2957.84,₹
+libertshoe,Liberty Shoes Limited,LIBERTSHOE,indian-stock,0.189,0.389,0.065,7748.22,₹
+nam-india,Nippon Life India Asset Management Limited,NAM-INDIA,indian-stock,0.149,0.369,0.065,5769.87,₹
+mukandltd,Mukand Limited,MUKANDLTD,indian-stock,0.118,0.381,0.065,9909.85,₹
+indterrain,Indian Terrain Fashions Limited,INDTERRAIN,indian-stock,0.156,0.460,0.065,7624.04,₹
+dmart,Avenue Supermarts Limited,DMART,indian-stock,0.142,0.261,0.065,4309.03,₹
+jyoticnc,Jyoti CNC Automation Limited,JYOTICNC,indian-stock,0.183,0.422,0.065,2550.56,₹
+ptc,PTC India Limited,PTC,indian-stock,0.202,0.192,0.065,2701.87,₹
+jlhl,Jupiter Life Line Hospitals Limited,JLHL,indian-stock,0.201,0.212,0.065,8666.38,₹
+nationstd,National Standard (India) Limited,NATIONSTD,indian-stock,0.096,0.480,0.065,2177.79,₹
+ntpc,NTPC Limited,NTPC,indian-stock,0.183,0.435,0.065,8624.38,₹
+availfc,Available Finance Limited,AVAILFC,indian-stock,0.165,0.338,0.065,6199.90,₹
+welspunliv,Welspun Living Limited,WELSPUNLIV,indian-stock,0.190,0.481,0.065,8073.86,₹
+khaichem,Khaitan Chemicals & Fertilizers Limited,KHAICHEM,indian-stock,0.160,0.377,0.065,6008.89,₹
+dabur,Dabur India Limited,DABUR,indian-stock,0.104,0.542,0.065,2997.08,₹
+marksans,Marksans Pharma Limited,MARKSANS,indian-stock,0.160,0.532,0.065,5192.71,₹
+beekay,Beekay Steel Industries Limited,BEEKAY,indian-stock,0.206,0.482,0.065,1442.33,₹
+primesecu,Prime Securities Limited,PRIMESECU,indian-stock,0.185,0.332,0.065,686.93,₹
+pyramid,Pyramid Technoplast Limited,PYRAMID,indian-stock,0.119,0.423,0.065,7044.12,₹
+magadsugar,Magadh Sugar & Energy Limited,MAGADSUGAR,indian-stock,0.099,0.234,0.065,3288.76,₹
+nglfine,NGL Fine-Chem Limited,NGLFINE,indian-stock,0.115,0.492,0.065,3987.74,₹
+essentia,Integra Essentia Limited,ESSENTIA,indian-stock,0.100,0.414,0.065,6315.35,₹
+urbanco,Urban Company Limited,URBANCO,indian-stock,0.133,0.208,0.065,7966.53,₹
+chembond,Chembond Material Technologies Limited,CHEMBOND,indian-stock,0.188,0.329,0.065,7523.04,₹
+capillary,Capillary Technologies India Limited,CAPILLARY,indian-stock,0.177,0.505,0.065,4601.49,₹
+gatech,GACM Technologies Limited,GATECH,indian-stock,0.148,0.395,0.065,8702.19,₹
+snowman,Snowman Logistics Limited,SNOWMAN,indian-stock,0.199,0.214,0.065,9724.29,₹
+genuspower,Genus Power Infrastructures Limited,GENUSPOWER,indian-stock,0.169,0.438,0.065,8516.05,₹
+deltacorp,Delta Corp Limited,DELTACORP,indian-stock,0.191,0.327,0.065,9684.47,₹
+jtektindia,Jtekt India Limited,JTEKTINDIA,indian-stock,0.195,0.363,0.065,3296.36,₹
+themismed,Themis Medicare Limited,THEMISMED,indian-stock,0.120,0.383,0.065,1392.88,₹
+bnagrochem,BN Agrochem Limited,BNAGROCHEM,indian-stock,0.199,0.472,0.065,8952.13,₹
+hdfclife,HDFC Life Insurance Company Limited,HDFCLIFE,indian-stock,0.187,0.197,0.065,6299.18,₹
+senco,Senco Gold Limited,SENCO,indian-stock,0.197,0.186,0.065,9301.39,₹
+pilaniinvs,Pilani Investment and Industries Corporation Limited,PILANIINVS,indian-stock,0.102,0.349,0.065,9919.20,₹
+kennamet,Kennametal India Limited,KENNAMET,indian-stock,0.140,0.548,0.065,9103.13,₹
+venkeys,Venky's (India) Limited,VENKEYS,indian-stock,0.204,0.292,0.065,8756.79,₹
+priviscl,Privi Speciality Chemicals Limited,PRIVISCL,indian-stock,0.203,0.215,0.065,3668.31,₹
+greenpower,Orient Green Power Company Limited,GREENPOWER,indian-stock,0.092,0.426,0.065,6524.22,₹
+trf,TRF Limited,TRF,indian-stock,0.087,0.411,0.065,7287.28,₹
+oswalseeds,ShreeOswal Seeds And Chemicals Limited,OSWALSEEDS,indian-stock,0.186,0.339,0.065,1002.87,₹
+gail,GAIL (India) Limited,GAIL,indian-stock,0.093,0.259,0.065,871.59,₹
+rajooeng,Rajoo Engineers Limited,RAJOOENG,indian-stock,0.163,0.372,0.065,4506.16,₹
+eurotexind,Eurotex Industries and Exports Limited,EUROTEXIND,indian-stock,0.081,0.307,0.065,1293.88,₹
+pocl,Pondy Oxides & Chemicals Limited,POCL,indian-stock,0.200,0.437,0.065,4829.23,₹
+autoind,Autoline Industries Limited,AUTOIND,indian-stock,0.112,0.213,0.065,8078.97,₹
+urja,Urja Global Limited,URJA,indian-stock,0.094,0.316,0.065,3062.63,₹
+schneider,Schneider Electric Infrastructure Limited,SCHNEIDER,indian-stock,0.134,0.481,0.065,8757.52,₹
+keeplearn,DSJ Keep Learning Limited,KEEPLEARN,indian-stock,0.170,0.431,0.065,777.27,₹
+kamdhenu,Kamdhenu Limited,KAMDHENU,indian-stock,0.159,0.406,0.065,1724.75,₹
+vinylindia,Vinyl Chemicals (India) Limited,VINYLINDIA,indian-stock,0.129,0.259,0.065,7507.86,₹
+ominfral,OM INFRA LIMITED,OMINFRAL,indian-stock,0.209,0.408,0.065,4479.60,₹
+kaynes,Kaynes Technology India Limited,KAYNES,indian-stock,0.110,0.512,0.065,1486.13,₹
+aki,AKI India Limited,AKI,indian-stock,0.097,0.450,0.065,3580.20,₹
+fusion,Fusion Finance Limited,FUSION,indian-stock,0.140,0.473,0.065,2553.09,₹
+wsi,W S Industries (I) Limited,WSI,indian-stock,0.170,0.272,0.065,6049.89,₹
+pokarna,Pokarna Limited,POKARNA,indian-stock,0.181,0.285,0.065,9418.66,₹
+kddl,KDDL Limited,KDDL,indian-stock,0.084,0.493,0.065,8770.69,₹
+tfciltd,Tourism Finance Corporation of India Limited,TFCILTD,indian-stock,0.109,0.405,0.065,1967.60,₹
+grinfra,G R Infraprojects Limited,GRINFRA,indian-stock,0.135,0.419,0.065,7859.64,₹
+abrel,Aditya Birla Real Estate Limited,ABREL,indian-stock,0.191,0.269,0.065,3920.27,₹
+geojitfsl,Geojit Financial Services Limited,GEOJITFSL,indian-stock,0.114,0.416,0.065,803.02,₹
+vcl,Vaxtex Cotfab Limited,VCL,indian-stock,0.204,0.184,0.065,3674.87,₹
+ratnamani,Ratnamani Metals & Tubes Limited,RATNAMANI,indian-stock,0.124,0.323,0.065,8405.84,₹
+infomedia,Infomedia Press Limited,INFOMEDIA,indian-stock,0.139,0.382,0.065,1810.43,₹
+bajajhind,Bajaj Hindusthan Sugar Limited,BAJAJHIND,indian-stock,0.146,0.545,0.065,822.62,₹
+torntpharm,Torrent Pharmaceuticals Limited,TORNTPHARM,indian-stock,0.162,0.185,0.065,2235.86,₹
+disaq,Disa India Limited,DISAQ,indian-stock,0.209,0.531,0.065,4039.95,₹
+calsoft,California Software Company Limited,CALSOFT,indian-stock,0.120,0.444,0.065,7694.39,₹
+lordschlo,Lords Chloro Alkali Limited,LORDSCHLO,indian-stock,0.139,0.329,0.065,6441.32,₹
+forcemot,FORCE MOTORS LTD,FORCEMOT,indian-stock,0.155,0.236,0.065,927.61,₹
+cipla,Cipla Limited,CIPLA,indian-stock,0.091,0.521,0.065,9745.70,₹
+elantas,Elantas Beck India Limited,ELANTAS,indian-stock,0.102,0.301,0.065,5905.73,₹
+aadharhfc,Aadhar Housing Finance Limited,AADHARHFC,indian-stock,0.187,0.420,0.065,6467.23,₹
+meesho,Meesho Limited,MEESHO,indian-stock,0.123,0.342,0.065,9538.94,₹
+geship,The Great Eastern Shipping Company Limited,GESHIP,indian-stock,0.113,0.270,0.065,9253.81,₹
+itc,ITC Limited,ITC,indian-stock,0.096,0.407,0.065,644.78,₹
+20microns,20 Microns Limited,20MICRONS,indian-stock,0.173,0.423,0.065,1838.89,₹
+aeroenter,Aeroflex Enterprises Limited,AEROENTER,indian-stock,0.082,0.231,0.065,212.37,₹
+tiil,Technocraft Industries (India) Limited,TIIL,indian-stock,0.149,0.308,0.065,5220.51,₹
+olectra,Olectra Greentech Limited,OLECTRA,indian-stock,0.195,0.276,0.065,3781.51,₹
+ramasteel,Rama Steel Tubes Limited,RAMASTEEL,indian-stock,0.185,0.503,0.065,7356.06,₹
+ghcltextil,GHCL Textiles Limited,GHCLTEXTIL,indian-stock,0.097,0.513,0.065,3416.61,₹
+gujalkali,Gujarat Alkalies and Chemicals Limited,GUJALKALI,indian-stock,0.140,0.374,0.065,2703.20,₹
+blissgvs,Bliss GVS Pharma Limited,BLISSGVS,indian-stock,0.217,0.412,0.065,5011.86,₹
+ramky,Ramky Infrastructure Limited,RAMKY,indian-stock,0.152,0.201,0.065,8607.66,₹
+muthootmf,Muthoot Microfin Limited,MUTHOOTMF,indian-stock,0.103,0.238,0.065,7755.96,₹
+motisons,Motisons Jewellers Limited,MOTISONS,indian-stock,0.205,0.429,0.065,1241.80,₹
+sayajihotl,Sayaji Hotels Limited,SAYAJIHOTL,indian-stock,0.184,0.181,0.065,8601.02,₹
+orchasp,Orchasp Limited,ORCHASP,indian-stock,0.082,0.197,0.065,3703.37,₹
+damcapital,Dam Capital Advisors Limited,DAMCAPITAL,indian-stock,0.209,0.246,0.065,9607.39,₹
+gokulagro,Gokul Agro Resources Limited,GOKULAGRO,indian-stock,0.085,0.477,0.065,7168.81,₹
+cybermedia,Cyber Media (India) Limited,CYBERMEDIA,indian-stock,0.172,0.263,0.065,2557.81,₹
+aarnav,Aarnav Fashions Limited,AARNAV,indian-stock,0.208,0.298,0.065,8277.37,₹
+jkcement,JK Cement Limited,JKCEMENT,indian-stock,0.160,0.224,0.065,6765.92,₹
+take,Take Solutions Limited,TAKE,indian-stock,0.087,0.263,0.065,5206.16,₹
+drreddy,Dr. Reddy's Laboratories Limited,DRREDDY,indian-stock,0.086,0.328,0.065,8782.21,₹
+eihahotels,EIH Associated Hotels Limited,EIHAHOTELS,indian-stock,0.201,0.466,0.065,3175.91,₹
+raymond,Raymond Limited,RAYMOND,indian-stock,0.092,0.349,0.065,3752.30,₹
+asalcbr,Associated Alcohols & Breweries Ltd.,ASALCBR,indian-stock,0.121,0.470,0.065,7421.80,₹
+shringarms,Shringar House of Mangalsutra Limited,SHRINGARMS,indian-stock,0.114,0.316,0.065,9721.39,₹
+emamipap,Emami Paper Mills Limited,EMAMIPAP,indian-stock,0.220,0.467,0.065,7351.39,₹
+regenceram,Regency Ceramics Limited,REGENCERAM,indian-stock,0.157,0.475,0.065,1590.61,₹
+pilita,PIL ITALICA LIFESTYLE LIMITED,PILITA,indian-stock,0.211,0.189,0.065,5461.30,₹
+banswras,Banswara Syntex Limited,BANSWRAS,indian-stock,0.169,0.437,0.065,194.99,₹
+rptech,Rashi Peripherals Limited,RPTECH,indian-stock,0.127,0.461,0.065,3825.12,₹
+vakrangee,Vakrangee Limited,VAKRANGEE,indian-stock,0.183,0.294,0.065,2131.42,₹
+premierpol,Premier Polyfilm Limited,PREMIERPOL,indian-stock,0.218,0.335,0.065,9615.73,₹
+lincoln,Lincoln Pharmaceuticals Limited,LINCOLN,indian-stock,0.216,0.233,0.065,2870.27,₹
+bajajhcare,Bajaj Healthcare Limited,BAJAJHCARE,indian-stock,0.086,0.266,0.065,8470.49,₹
+irctc,Indian Railway Catering And Tourism Corporation Limited,IRCTC,indian-stock,0.138,0.511,0.065,4638.73,₹
+jagran,Jagran Prakashan Limited,JAGRAN,indian-stock,0.185,0.395,0.065,5103.73,₹
+purva,Puravankara Limited,PURVA,indian-stock,0.169,0.326,0.065,5959.77,₹
+chennpetro,Chennai Petroleum Corporation Limited,CHENNPETRO,indian-stock,0.089,0.425,0.065,1394.01,₹
+nrl,Nupur Recyclers Limited,NRL,indian-stock,0.121,0.495,0.065,9267.82,₹
+winsome,Winsome Yarns Limited,WINSOME,indian-stock,0.135,0.488,0.065,3329.89,₹
+omkarchem,Omkar Speciality Chemicals Limited,OMKARCHEM,indian-stock,0.143,0.266,0.065,9441.19,₹
+hindzinc,Hindustan Zinc Limited,HINDZINC,indian-stock,0.099,0.465,0.065,1178.83,₹
+brighotel,Brigade Hotel Ventures Limited,BRIGHOTEL,indian-stock,0.095,0.346,0.065,3208.93,₹
+shardul,Shardul Securities Limited,SHARDUL,indian-stock,0.097,0.313,0.065,7726.33,₹
+nh,Narayana Hrudayalaya Ltd.,NH,indian-stock,0.143,0.351,0.065,8539.57,₹
+lt,Larsen & Toubro Limited,LT,indian-stock,0.093,0.479,0.065,3111.73,₹
+xelpmoc,Xelpmoc Design And Tech Limited,XELPMOC,indian-stock,0.179,0.403,0.065,2228.71,₹
+vssl,Vardhman Special Steels Limited,VSSL,indian-stock,0.200,0.235,0.065,7140.46,₹
+monarch,Monarch Networth Capital Limited,MONARCH,indian-stock,0.216,0.327,0.065,584.61,₹
+muktaarts,Mukta Arts Limited,MUKTAARTS,indian-stock,0.122,0.483,0.065,1821.29,₹
+speciality,Speciality Restaurants Limited,SPECIALITY,indian-stock,0.213,0.496,0.065,5603.94,₹
+fmnl,Future Market Networks Limited,FMNL,indian-stock,0.157,0.215,0.065,1108.88,₹
+electherm,Electrotherm (India) Limited,ELECTHERM,indian-stock,0.191,0.225,0.065,710.52,₹
+mirzaint,Mirza International Limited,MIRZAINT,indian-stock,0.189,0.262,0.065,2061.52,₹
+quadfuture,Quadrant Future Tek Limited,QUADFUTURE,indian-stock,0.136,0.434,0.065,9381.99,₹
+svll,Shree Vasu Logistics Limited,SVLL,indian-stock,0.092,0.397,0.065,9182.54,₹
+bttl,Bhilwara Technical Textiles Limited,BTTL,indian-stock,0.090,0.549,0.065,2057.73,₹
+hblengine,HBL Engineering Limited,HBLENGINE,indian-stock,0.170,0.479,0.065,1010.59,₹
+gss,GSS Infotech Limited,GSS,indian-stock,0.199,0.479,0.065,1313.02,₹
+onmobile,OnMobile Global Limited,ONMOBILE,indian-stock,0.212,0.199,0.065,9248.90,₹
+enil,Entertainment Network (India) Limited,ENIL,indian-stock,0.141,0.448,0.065,5011.65,₹
+sirca,Sirca Paints India Limited,SIRCA,indian-stock,0.134,0.338,0.065,3604.04,₹
+bankindia,Bank of India,BANKINDIA,indian-stock,0.207,0.282,0.065,4515.51,₹
+kwil,Kwality Wall's (India) Limited,KWIL,indian-stock,0.101,0.407,0.065,6208.07,₹
+systmtxc,Systematix Corporate Services Limited,SYSTMTXC,indian-stock,0.171,0.365,0.065,8839.51,₹
+hlvltd,HLV LIMITED,HLVLTD,indian-stock,0.147,0.212,0.065,3891.85,₹
+megastar,Megastar Foods Limited,MEGASTAR,indian-stock,0.139,0.418,0.065,7992.26,₹
+hatsun,Hatsun Agro Product Limited,HATSUN,indian-stock,0.115,0.548,0.065,5482.20,₹
+manakcoat,Manaksia Coated Metals & Industries Limited,MANAKCOAT,indian-stock,0.083,0.322,0.065,7162.37,₹
+gravissho,Graviss Hospitality Limited,GRAVISSHO,indian-stock,0.147,0.469,0.065,3505.94,₹
+venusrem,Venus Remedies Limited,VENUSREM,indian-stock,0.159,0.299,0.065,2777.31,₹
+bharatras,Bharat Rasayan Limited,BHARATRAS,indian-stock,0.084,0.401,0.065,390.10,₹
+lypsagems,Lypsa Gems & Jewellery Limited,LYPSAGEMS,indian-stock,0.193,0.284,0.065,8105.67,₹
+indigopnts,Indigo Paints Limited,INDIGOPNTS,indian-stock,0.146,0.312,0.065,5881.49,₹
+ashoka,Ashoka Buildcon Limited,ASHOKA,indian-stock,0.113,0.239,0.065,2553.78,₹
+pavnaind,Pavna Industries Limited,PAVNAIND,indian-stock,0.114,0.377,0.065,7933.25,₹
+wewin,WE WIN LIMITED,WEWIN,indian-stock,0.183,0.463,0.065,9483.24,₹
+tcc,TCC Concept Limited,TCC,indian-stock,0.161,0.544,0.065,3945.38,₹
+niitmts,NIIT Learning Systems Limited,NIITMTS,indian-stock,0.211,0.547,0.065,1819.75,₹
+stlnetwork,STL Networks Limited,STLNETWORK,indian-stock,0.113,0.298,0.065,7407.24,₹
+haleoslabs,HALEOS LABS LIMITED,HALEOSLABS,indian-stock,0.130,0.399,0.065,7064.18,₹
+dbl,Dilip Buildcon Limited,DBL,indian-stock,0.129,0.390,0.065,1506.81,₹
+onesource,Onesource Specialty Pharma Limited,ONESOURCE,indian-stock,0.213,0.490,0.065,8122.97,₹
+advenzymes,Advanced Enzyme Technologies Limited,ADVENZYMES,indian-stock,0.216,0.381,0.065,1838.01,₹
+coffeeday,Coffee Day Enterprises Limited,COFFEEDAY,indian-stock,0.085,0.201,0.065,6056.46,₹
+tntele,Tamilnadu Telecommunication Limited,TNTELE,indian-stock,0.083,0.357,0.065,3384.17,₹
+gvkpil,GVK Power & Infrastructure Limited,GVKPIL,indian-stock,0.166,0.478,0.065,3473.51,₹
+bbtc,The Bombay Burmah Trading Corporation Limited,BBTC,indian-stock,0.105,0.477,0.065,8695.35,₹
+jbma,JBM Auto Limited,JBMA,indian-stock,0.088,0.235,0.065,7076.49,₹
+vhl,Vardhman Holdings Limited,VHL,indian-stock,0.100,0.221,0.065,5310.32,₹
+fel,Future Enterprises Limited,FEL,indian-stock,0.131,0.207,0.065,7074.93,₹
+sbglp,Suratwwala Business Group Limited,SBGLP,indian-stock,0.173,0.397,0.065,3431.95,₹
+avg,AVG Logistics Limited,AVG,indian-stock,0.125,0.541,0.065,7350.29,₹
+panache,Panache Digilife Limited,PANACHE,indian-stock,0.141,0.417,0.065,4923.28,₹
+asms,Bartronics India Limited,ASMS,indian-stock,0.124,0.442,0.065,5663.58,₹
+indiaglyco,India Glycols Limited,INDIAGLYCO,indian-stock,0.205,0.407,0.065,3632.57,₹
+3bblackbio,3B Blackbio Dx Limited,3BBLACKBIO,indian-stock,0.173,0.481,0.065,3846.00,₹
+jagsnpharm,Jagsonpal Pharmaceuticals Limited,JAGSNPHARM,indian-stock,0.183,0.289,0.065,1859.31,₹
+fedfina,Fedbank Financial Services Limited,FEDFINA,indian-stock,0.080,0.440,0.065,5771.06,₹
+paradeep,Paradeep Phosphates Limited,PARADEEP,indian-stock,0.199,0.465,0.065,5718.08,₹
+affordable,Affordable Robotic & Automation Limited,AFFORDABLE,indian-stock,0.105,0.298,0.065,8107.19,₹
+rainbow,Rainbow Childrens Medicare Limited,RAINBOW,indian-stock,0.166,0.417,0.065,1130.69,₹
+hdfcbank,HDFC Bank Limited,HDFCBANK,indian-stock,0.149,0.303,0.065,870.29,₹
+hisarmetal,Hisar Metal Industries Limited,HISARMETAL,indian-stock,0.129,0.298,0.065,6398.25,₹
+hilinfra,Highway Infrastructure Limited,HILINFRA,indian-stock,0.215,0.484,0.065,6733.24,₹
+sundaram,Sundaram Multi Pap Limited,SUNDARAM,indian-stock,0.182,0.304,0.065,212.82,₹
+vedl,Vedanta Limited,VEDL,indian-stock,0.109,0.436,0.065,3569.76,₹
+praeng,Prajay Engineers Syndicate Limited,PRAENG,indian-stock,0.190,0.447,0.065,576.66,₹
+jswsteel,JSW Steel Limited,JSWSTEEL,indian-stock,0.141,0.335,0.065,1746.75,₹
+terasoft,Tera Software Limited,TERASOFT,indian-stock,0.138,0.506,0.065,3577.19,₹
+marsons,Marsons Limited,MARSONS,indian-stock,0.133,0.487,0.065,7908.43,₹
+mahseamles,Maharashtra Seamless Limited,MAHSEAMLES,indian-stock,0.161,0.461,0.065,2333.27,₹
+kotharipro,Kothari Products Limited,KOTHARIPRO,indian-stock,0.143,0.476,0.065,430.79,₹
+rblbank,RBL Bank Limited,RBLBANK,indian-stock,0.083,0.277,0.065,1136.78,₹
+5paisa,5Paisa Capital Limited,5PAISA,indian-stock,0.128,0.509,0.065,1692.95,₹
+mvgjl,Manoj Vaibhav Gems N Jewellers Limited,MVGJL,indian-stock,0.091,0.528,0.065,9782.61,₹
+securkloud,SECUREKLOUD TECHNOLOGIES LIMITED,SECURKLOUD,indian-stock,0.127,0.545,0.065,8942.94,₹
+morepenlab,Morepen Laboratories Limited,MOREPENLAB,indian-stock,0.179,0.340,0.065,6570.99,₹
+parkhotels,Apeejay Surrendra Park Hotels Limited,PARKHOTELS,indian-stock,0.165,0.341,0.065,630.20,₹
+palredtec,Palred Technologies Limited,PALREDTEC,indian-stock,0.126,0.541,0.065,4151.87,₹
+taaltech,Taal Tech Limited,TAALTECH,indian-stock,0.158,0.522,0.065,5447.24,₹
+chamblfert,Chambal Fertilizers & Chemicals Limited,CHAMBLFERT,indian-stock,0.172,0.290,0.065,1049.57,₹
+nocil,NOCIL Limited,NOCIL,indian-stock,0.135,0.383,0.065,4960.39,₹
+aye,Aye Finance Limited,AYE,indian-stock,0.088,0.181,0.065,967.52,₹
+orienttech,Orient Technologies Limited,ORIENTTECH,indian-stock,0.195,0.411,0.065,4855.25,₹
+ktkbank,The Karnataka Bank Limited,KTKBANK,indian-stock,0.094,0.257,0.065,6418.09,₹
+bajajhldng,Bajaj Holdings & Investment Limited,BAJAJHLDNG,indian-stock,0.217,0.355,0.065,1243.54,₹
+cte,Cambridge Technology Enterprises Limited,CTE,indian-stock,0.190,0.354,0.065,8959.29,₹
+starhealth,Star Health and Allied Insurance Company Limited,STARHEALTH,indian-stock,0.117,0.417,0.065,3936.52,₹
+navkarurb,Navkar Urbanstructure Limited,NAVKARURB,indian-stock,0.132,0.321,0.065,1947.17,₹
+spectrum,Spectrum Electrical Industries Limited,SPECTRUM,indian-stock,0.086,0.343,0.065,2707.67,₹
+surajest,Suraj Estate Developers Limited,SURAJEST,indian-stock,0.197,0.389,0.065,1596.19,₹
+reliable,Reliable Data Services Limited,RELIABLE,indian-stock,0.178,0.216,0.065,6714.60,₹
+indothai,Indo Thai Securities Limited,INDOTHAI,indian-stock,0.193,0.333,0.065,7588.92,₹
+oberoirlty,Oberoi Realty Limited,OBEROIRLTY,indian-stock,0.112,0.203,0.065,3932.35,₹
+indusindbk,IndusInd Bank Limited,INDUSINDBK,indian-stock,0.153,0.537,0.065,6901.97,₹
+3iinfoltd,3i Infotech Limited,3IINFOLTD,indian-stock,0.211,0.392,0.065,2432.86,₹
+kkcl,Kewal Kiran Clothing Limited,KKCL,indian-stock,0.122,0.326,0.065,8554.00,₹
+rkswamy,R K Swamy Limited,RKSWAMY,indian-stock,0.085,0.391,0.065,5216.49,₹
+hmaagro,HMA Agro Industries Limited,HMAAGRO,indian-stock,0.160,0.544,0.065,1559.73,₹
+ufbl,United Foodbrands Limited,UFBL,indian-stock,0.213,0.346,0.065,9495.71,₹
+devx,Dev Accelerator Limited,DEVX,indian-stock,0.103,0.258,0.065,2007.99,₹
+aartiind,Aarti Industries Limited,AARTIIND,indian-stock,0.086,0.209,0.065,6862.94,₹
+ajaxengg,Ajax Engineering Limited,AJAXENGG,indian-stock,0.108,0.484,0.065,1563.99,₹
+nittagela,Nitta Gelatin India Limited,NITTAGELA,indian-stock,0.163,0.298,0.065,7298.32,₹
+irfc,Indian Railway Finance Corporation Limited,IRFC,indian-stock,0.193,0.212,0.065,5608.01,₹
+innovision,Innovision Limited,INNOVISION,indian-stock,0.157,0.497,0.065,5244.91,₹
+sampann,Sampann Utpadan India Limited,SAMPANN,indian-stock,0.208,0.185,0.065,7034.08,₹
+unominda,UNO Minda Limited,UNOMINDA,indian-stock,0.162,0.469,0.065,1213.94,₹
+kirlpnu,Kirloskar Pneumatic Company Limited,KIRLPNU,indian-stock,0.101,0.390,0.065,5868.50,₹
+dhampursug,Dhampur Sugar Mills Limited,DHAMPURSUG,indian-stock,0.215,0.217,0.065,1145.78,₹
+secmark,SecMark Consultancy Limited,SECMARK,indian-stock,0.189,0.471,0.065,8688.01,₹
+zeel,Zee Entertainment Enterprises Limited,ZEEL,indian-stock,0.203,0.505,0.065,2714.95,₹
+federalbnk,The Federal Bank  Limited,FEDERALBNK,indian-stock,0.172,0.392,0.065,4783.16,₹
+tatacomm,Tata Communications Limited,TATACOMM,indian-stock,0.104,0.329,0.065,6220.62,₹
+redington,Redington Limited,REDINGTON,indian-stock,0.175,0.329,0.065,4018.35,₹
+saiparent,Sai Parenterals Limited,SAIPARENT,indian-stock,0.203,0.435,0.065,587.98,₹
+albertdavd,Albert David Limited,ALBERTDAVD,indian-stock,0.147,0.279,0.065,3787.16,₹
+blackrose,Black Rose Inds. Limited,BLACKROSE,indian-stock,0.127,0.474,0.065,3178.40,₹
+riil,Reliance Industrial Infrastructure Limited,RIIL,indian-stock,0.198,0.498,0.065,6880.04,₹
+dji,Dow Jones,DJI,global-index,0.147,0.150,0.045,14117.78,$
+ndx,NASDAQ 100,NDX,global-index,0.124,0.221,0.045,14872.13,$
+spx,S&P 500,SPX,global-index,0.123,0.199,0.045,6303.61,$
+ukx,FTSE 100,UKX,global-index,0.094,0.239,0.045,18065.30,$
+dax,DAX 40,DAX,global-index,0.098,0.187,0.045,16834.68,$
+cac,CAC 40,CAC,global-index,0.056,0.223,0.045,5427.83,$
+nky,Nikkei 225,NKY,global-index,0.121,0.172,0.045,31879.11,$
+hsi,Hang Seng,HSI,global-index,0.102,0.194,0.045,9428.28,$
+shcomp,Shanghai Comp,SHCOMP,global-index,0.138,0.146,0.045,5132.22,$
+as51,ASX 200,AS51,global-index,0.053,0.127,0.045,16333.88,$
+sptsx,TSX Comp,SPTSX,global-index,0.070,0.168,0.045,20176.08,$
+sx5e,Euro Stoxx 50,SX5E,global-index,0.090,0.240,0.045,28203.45,$
+kospi,Kospi,KOSPI,global-index,0.074,0.184,0.045,19505.83,$
+nifty,Nifty 50,NIFTY,global-index,0.146,0.182,0.045,23399.35,$
+ibov,Bovespa,IBOV,global-index,0.084,0.229,0.045,12570.42,$
+mexbol,IPC Mexico,MEXBOL,global-index,0.133,0.132,0.045,4015.67,$
+smi,Swiss Market,SMI,global-index,0.055,0.231,0.045,31853.72,$
+aex,AEX,AEX,global-index,0.071,0.149,0.045,11329.15,$
+ibex,IBEX 35,IBEX,global-index,0.071,0.205,0.045,21991.41,$
+ftsemib,FTSE MIB,FTSEMIB,global-index,0.136,0.246,0.045,28241.39,$
+bax,Baxter International,BAX,us-stock,0.208,0.242,0.045,181.47,$
+foxa,Fox Corporation (Class A),FOXA,us-stock,0.296,0.285,0.045,612.26,$
+nflx,Netflix,NFLX,us-stock,0.335,0.515,0.045,712.27,$
+eqr,Equity Residential,EQR,us-stock,0.154,0.601,0.045,853.07,$
+gd,General Dynamics,GD,us-stock,0.204,0.283,0.045,309.12,$
+cdw,CDW Corporation,CDW,us-stock,0.221,0.473,0.045,588.64,$
+d,Dominion Energy,D,us-stock,0.082,0.650,0.045,966.82,$
+payx,Paychex,PAYX,us-stock,0.307,0.444,0.045,597.83,$
+br,Broadridge Financial Solutions,BR,us-stock,0.156,0.502,0.045,486.92,$
+kmi,Kinder Morgan,KMI,us-stock,0.171,0.310,0.045,331.89,$
+ea,Electronic Arts,EA,us-stock,0.155,0.488,0.045,952.67,$
+ni,NiSource,NI,us-stock,0.256,0.269,0.045,522.12,$
+q,Qnity Electronics,Q,us-stock,0.145,0.207,0.045,858.74,$
+dltr,Dollar Tree,DLTR,us-stock,0.299,0.370,0.045,326.39,$
+lmt,Lockheed Martin,LMT,us-stock,0.118,0.192,0.045,502.40,$
+hii,Huntington Ingalls Industries,HII,us-stock,0.160,0.606,0.045,410.55,$
+mas,Masco,MAS,us-stock,0.279,0.454,0.045,994.81,$
+iex,IDEX Corporation,IEX,us-stock,0.300,0.341,0.045,716.24,$
+cbre,CBRE Group,CBRE,us-stock,0.265,0.480,0.045,480.98,$
+expd,Expeditors International,EXPD,us-stock,0.334,0.348,0.045,307.19,$
+csgp,CoStar Group,CSGP,us-stock,0.126,0.489,0.045,562.67,$
+so,Southern Company,SO,us-stock,0.159,0.401,0.045,743.51,$
+apo,Apollo Global Management,APO,us-stock,0.276,0.443,0.045,913.50,$
+bk,BNY Mellon,BK,us-stock,0.336,0.603,0.045,657.89,$
+otis,Otis Worldwide,OTIS,us-stock,0.140,0.285,0.045,872.72,$
+aes,AES Corporation,AES,us-stock,0.194,0.597,0.045,377.97,$
+cor,Cencora,COR,us-stock,0.238,0.398,0.045,126.60,$
+vrsn,Verisign,VRSN,us-stock,0.094,0.478,0.045,584.51,$
+khc,Kraft Heinz,KHC,us-stock,0.248,0.402,0.045,202.60,$
+dis,Walt Disney Company (The),DIS,us-stock,0.112,0.500,0.045,534.54,$
+hon,Honeywell,HON,us-stock,0.192,0.589,0.045,159.27,$
+now,ServiceNow,NOW,us-stock,0.348,0.341,0.045,987.32,$
+aptv,Aptiv,APTV,us-stock,0.321,0.644,0.045,151.79,$
+it,Gartner,IT,us-stock,0.313,0.265,0.045,90.00,$
+gddy,GoDaddy,GDDY,us-stock,0.170,0.644,0.045,320.28,$
+hood,Robinhood Markets,HOOD,us-stock,0.096,0.392,0.045,217.29,$
+mo,Altria,MO,us-stock,0.289,0.451,0.045,166.85,$
+stt,State Street Corporation,STT,us-stock,0.292,0.546,0.045,138.11,$
+pfg,Principal Financial Group,PFG,us-stock,0.197,0.382,0.045,434.74,$
+anet,Arista Networks,ANET,us-stock,0.209,0.182,0.045,538.44,$
+cvna,Carvana,CVNA,us-stock,0.277,0.627,0.045,893.09,$
+dg,Dollar General,DG,us-stock,0.284,0.430,0.045,27.74,$
+bmy,Bristol Myers Squibb,BMY,us-stock,0.081,0.525,0.045,234.00,$
+ip,International Paper,IP,us-stock,0.317,0.327,0.045,111.68,$
+ess,Essex Property Trust,ESS,us-stock,0.216,0.324,0.045,74.63,$
+casy,Casey's,CASY,us-stock,0.092,0.626,0.045,461.37,$
+wdc,Western Digital,WDC,us-stock,0.220,0.426,0.045,439.33,$
+avb,AvalonBay Communities,AVB,us-stock,0.265,0.243,0.045,996.18,$
+mgm,MGM Resorts,MGM,us-stock,0.212,0.533,0.045,173.23,$
+ttd,Trade Desk (The),TTD,us-stock,0.325,0.562,0.045,28.93,$
+eog,EOG Resources,EOG,us-stock,0.141,0.643,0.045,219.08,$
+pool,Pool Corporation,POOL,us-stock,0.086,0.417,0.045,131.93,$
+snps,Synopsys,SNPS,us-stock,0.272,0.552,0.045,381.44,$
+txt,Textron,TXT,us-stock,0.253,0.542,0.045,626.90,$
+tgt,Target Corporation,TGT,us-stock,0.240,0.203,0.045,117.03,$
+eqix,Equinix,EQIX,us-stock,0.306,0.203,0.045,124.63,$
+adsk,Autodesk,ADSK,us-stock,0.200,0.238,0.045,260.21,$
+nrg,NRG Energy,NRG,us-stock,0.270,0.277,0.045,688.88,$
+ge,GE Aerospace,GE,us-stock,0.083,0.378,0.045,109.97,$
+dpz,Domino's,DPZ,us-stock,0.220,0.473,0.045,703.72,$
+rost,Ross Stores,ROST,us-stock,0.193,0.602,0.045,516.47,$
+intc,Intel,INTC,us-stock,0.247,0.313,0.045,786.91,$
+hal,Halliburton,HAL,us-stock,0.214,0.466,0.045,780.18,$
+ctva,Corteva,CTVA,us-stock,0.305,0.637,0.045,364.34,$
+cmcsa,Comcast,CMCSA,us-stock,0.191,0.255,0.045,552.66,$
+acn,Accenture,ACN,us-stock,0.326,0.503,0.045,485.86,$
+stx,Seagate Technology,STX,us-stock,0.143,0.186,0.045,98.11,$
+vlo,Valero Energy,VLO,us-stock,0.110,0.450,0.045,499.16,$
+tdy,Teledyne Technologies,TDY,us-stock,0.336,0.546,0.045,84.30,$
+shw,Sherwin-Williams,SHW,us-stock,0.275,0.605,0.045,647.89,$
+nee,NextEra Energy,NEE,us-stock,0.203,0.639,0.045,271.48,$
+cnp,CenterPoint Energy,CNP,us-stock,0.094,0.562,0.045,875.40,$
+dell,Dell Technologies,DELL,us-stock,0.310,0.349,0.045,680.00,$
+gnrc,Generac,GNRC,us-stock,0.195,0.234,0.045,852.73,$
+hca,HCA Healthcare,HCA,us-stock,0.320,0.185,0.045,147.01,$
+irm,Iron Mountain,IRM,us-stock,0.255,0.334,0.045,895.58,$
+fast,Fastenal,FAST,us-stock,0.338,0.306,0.045,735.74,$
+rsg,Republic Services,RSG,us-stock,0.181,0.341,0.045,122.69,$
+ndsn,Nordson Corporation,NDSN,us-stock,0.188,0.395,0.045,837.35,$
+hwm,Howmet Aerospace,HWM,us-stock,0.266,0.405,0.045,427.52,$
+txn,Texas Instruments,TXN,us-stock,0.319,0.258,0.045,141.19,$
+abnb,Airbnb,ABNB,us-stock,0.276,0.641,0.045,845.91,$
+amd,Advanced Micro Devices,AMD,us-stock,0.108,0.608,0.045,487.85,$
+rol,"""Rollins",ROL,us-stock,0.234,0.386,0.045,615.21,$
+ibkr,Interactive Brokers,IBKR,us-stock,0.290,0.467,0.045,863.95,$
+l,Loews Corporation,L,us-stock,0.318,0.522,0.045,892.85,$
+chtr,Charter Communications,CHTR,us-stock,0.210,0.409,0.045,888.72,$
+oxy,Occidental Petroleum,OXY,us-stock,0.199,0.210,0.045,658.42,$
+rop,Roper Technologies,ROP,us-stock,0.083,0.588,0.045,529.57,$
+mco,Moody's Corporation,MCO,us-stock,0.281,0.520,0.045,231.75,$
+lyb,LyondellBasell,LYB,us-stock,0.338,0.590,0.045,523.91,$
+axp,American Express,AXP,us-stock,0.266,0.471,0.045,438.52,$
+bldr,Builders FirstSource,BLDR,us-stock,0.276,0.407,0.045,667.07,$
+pep,PepsiCo,PEP,us-stock,0.253,0.250,0.045,828.17,$
+kkr,KKR & Co.,KKR,us-stock,0.321,0.468,0.045,21.53,$
+gev,GE Vernova,GEV,us-stock,0.332,0.418,0.045,474.60,$
+rok,Rockwell Automation,ROK,us-stock,0.214,0.258,0.045,753.92,$
+cnc,Centene Corporation,CNC,us-stock,0.167,0.336,0.045,285.38,$
+fdx,FedEx,FDX,us-stock,0.217,0.439,0.045,384.85,$
+ben,Franklin Resources,BEN,us-stock,0.301,0.217,0.045,449.75,$
+coo,Cooper Companies (The),COO,us-stock,0.235,0.221,0.045,503.47,$
+dhi,D. R. Horton,DHI,us-stock,0.165,0.641,0.045,747.79,$
+hrl,Hormel Foods,HRL,us-stock,0.085,0.370,0.045,45.47,$
+lly,Lilly (Eli),LLY,us-stock,0.228,0.568,0.045,793.87,$
+vrtx,Vertex Pharmaceuticals,VRTX,us-stock,0.340,0.480,0.045,891.21,$
+pkg,Packaging Corporation of America,PKG,us-stock,0.232,0.488,0.045,461.65,$
+ppg,PPG Industries,PPG,us-stock,0.172,0.568,0.045,818.42,$
+cah,Cardinal Health,CAH,us-stock,0.308,0.336,0.045,769.74,$
+msi,Motorola Solutions,MSI,us-stock,0.242,0.517,0.045,369.66,$
+ma,Mastercard,MA,us-stock,0.202,0.226,0.045,662.32,$
+rvty,Revvity,RVTY,us-stock,0.081,0.347,0.045,637.32,$
+dov,Dover Corporation,DOV,us-stock,0.296,0.437,0.045,380.15,$
+mu,Micron Technology,MU,us-stock,0.109,0.602,0.045,497.50,$
+aapl,Apple Inc.,AAPL,us-stock,0.302,0.529,0.045,270.47,$
+hban,Huntington Bancshares,HBAN,us-stock,0.149,0.272,0.045,129.54,$
+ba,Boeing,BA,us-stock,0.310,0.281,0.045,826.31,$
+ci,Cigna,CI,us-stock,0.131,0.339,0.045,759.58,$
+on,ON Semiconductor,ON,us-stock,0.093,0.478,0.045,675.42,$
+fang,Diamondback Energy,FANG,us-stock,0.113,0.599,0.045,462.81,$
+invh,Invitation Homes,INVH,us-stock,0.239,0.417,0.045,964.22,$
+dd,DuPont,DD,us-stock,0.081,0.526,0.045,557.69,$
+ame,Ametek,AME,us-stock,0.197,0.455,0.045,925.13,$
+eg,Everest Group,EG,us-stock,0.291,0.608,0.045,694.90,$
+afl,Aflac,AFL,us-stock,0.127,0.563,0.045,112.52,$
+jci,Johnson Controls,JCI,us-stock,0.258,0.465,0.045,328.63,$
+well,Welltower,WELL,us-stock,0.318,0.377,0.045,612.90,$
+hpq,HP Inc.,HPQ,us-stock,0.267,0.297,0.045,403.89,$
+cmi,Cummins,CMI,us-stock,0.173,0.318,0.045,806.75,$
+dhr,Danaher Corporation,DHR,us-stock,0.117,0.463,0.045,887.57,$
+glw,Corning Inc.,GLW,us-stock,0.218,0.576,0.045,552.33,$
+fis,Fidelity National Information Services,FIS,us-stock,0.165,0.526,0.045,558.05,$
+ibm,IBM,IBM,us-stock,0.139,0.279,0.045,717.24,$
+grmn,Garmin,GRMN,us-stock,0.265,0.613,0.045,141.35,$
+gpn,Global Payments,GPN,us-stock,0.272,0.638,0.045,186.03,$
+abt,Abbott Laboratories,ABT,us-stock,0.226,0.479,0.045,713.25,$
+all,Allstate,ALL,us-stock,0.285,0.444,0.045,586.98,$
+ddog,Datadog,DDOG,us-stock,0.335,0.514,0.045,677.50,$
+jbl,Jabil,JBL,us-stock,0.321,0.431,0.045,878.70,$
+bf.b,Brown–Forman,BF.B,us-stock,0.194,0.186,0.045,115.41,$
+ptc,PTC Inc.,PTC,us-stock,0.183,0.205,0.045,66.04,$
+trow,T. Rowe Price,TROW,us-stock,0.152,0.549,0.045,983.70,$
+phm,PulteGroup,PHM,us-stock,0.265,0.249,0.045,71.41,$
+lrcx,Lam Research,LRCX,us-stock,0.292,0.276,0.045,545.76,$
+de,Deere & Company,DE,us-stock,0.177,0.393,0.045,619.95,$
+tfc,Truist Financial,TFC,us-stock,0.262,0.444,0.045,232.06,$
+bx,Blackstone Inc.,BX,us-stock,0.255,0.363,0.045,515.81,$
+vici,Vici Properties,VICI,us-stock,0.295,0.507,0.045,696.01,$
+cost,Costco,COST,us-stock,0.093,0.359,0.045,422.40,$
+dva,DaVita,DVA,us-stock,0.293,0.502,0.045,966.17,$
+elv,Elevance Health,ELV,us-stock,0.095,0.530,0.045,211.06,$
+sre,Sempra,SRE,us-stock,0.315,0.584,0.045,448.63,$
+etn,Eaton Corporation,ETN,us-stock,0.141,0.478,0.045,712.45,$
+maa,Mid-America Apartment Communities,MAA,us-stock,0.179,0.457,0.045,741.07,$
+pgr,Progressive Corporation,PGR,us-stock,0.133,0.521,0.045,201.56,$
+eqt,EQT Corporation,EQT,us-stock,0.201,0.642,0.045,83.72,$
+ldos,Leidos,LDOS,us-stock,0.340,0.525,0.045,128.16,$
+deck,Deckers Brands,DECK,us-stock,0.091,0.311,0.045,271.60,$
+jkhy,Jack Henry & Associates,JKHY,us-stock,0.123,0.578,0.045,15.59,$
+regn,Regeneron Pharmaceuticals,REGN,us-stock,0.206,0.621,0.045,49.54,$
+vrsk,Verisk Analytics,VRSK,us-stock,0.331,0.461,0.045,775.92,$
+duk,Duke Energy,DUK,us-stock,0.249,0.576,0.045,308.14,$
+tap,Molson Coors Beverage Company,TAP,us-stock,0.293,0.439,0.045,82.15,$
+lnt,Alliant Energy,LNT,us-stock,0.271,0.427,0.045,957.42,$
+trmb,Trimble Inc.,TRMB,us-stock,0.221,0.550,0.045,167.78,$
+goog,Alphabet Inc. (Class C),GOOG,us-stock,0.227,0.370,0.045,355.91,$
+cpay,Corpay,CPAY,us-stock,0.319,0.492,0.045,337.76,$
+low,Lowe's,LOW,us-stock,0.159,0.627,0.045,622.10,$
+syf,Synchrony Financial,SYF,us-stock,0.208,0.444,0.045,754.61,$
+lii,Lennox International,LII,us-stock,0.255,0.234,0.045,352.55,$
+ntrs,Northern Trust,NTRS,us-stock,0.145,0.482,0.045,919.42,$
+wfc,Wells Fargo,WFC,us-stock,0.146,0.199,0.045,886.80,$
+dvn,Devon Energy,DVN,us-stock,0.183,0.554,0.045,122.24,$
+fcx,Freeport-McMoRan,FCX,us-stock,0.149,0.520,0.045,34.46,$
+exe,Expand Energy,EXE,us-stock,0.220,0.542,0.045,519.17,$
+nws,News Corp (Class B),NWS,us-stock,0.217,0.409,0.045,303.47,$
+nvda,Nvidia,NVDA,us-stock,0.256,0.331,0.045,91.52,$
+fox,Fox Corporation (Class B),FOX,us-stock,0.106,0.637,0.045,775.59,$
+sbux,Starbucks,SBUX,us-stock,0.224,0.475,0.045,218.67,$
+are,Alexandria Real Estate Equities,ARE,us-stock,0.250,0.280,0.045,688.55,$
+axon,Axon Enterprise,AXON,us-stock,0.306,0.277,0.045,830.46,$
+bro,Brown & Brown,BRO,us-stock,0.317,0.528,0.045,440.89,$
+vrt,Vertiv,VRT,us-stock,0.301,0.214,0.045,689.18,$
+amat,Applied Materials,AMAT,us-stock,0.086,0.517,0.045,47.51,$
+fslr,First Solar,FSLR,us-stock,0.100,0.264,0.045,259.39,$
+tt,Trane Technologies,TT,us-stock,0.099,0.566,0.045,911.88,$
+iqv,IQVIA,IQV,us-stock,0.190,0.392,0.045,410.40,$
+mrna,Moderna,MRNA,us-stock,0.165,0.363,0.045,127.12,$
+exc,Exelon,EXC,us-stock,0.082,0.519,0.045,72.61,$
+efx,Equifax,EFX,us-stock,0.281,0.201,0.045,849.77,$
+hig,Hartford (The),HIG,us-stock,0.177,0.416,0.045,296.94,$
+pnw,Pinnacle West Capital,PNW,us-stock,0.265,0.465,0.045,288.70,$
+stld,Steel Dynamics,STLD,us-stock,0.330,0.359,0.045,823.90,$
+ms,Morgan Stanley,MS,us-stock,0.088,0.253,0.045,227.67,$
+schw,Charles Schwab Corporation,SCHW,us-stock,0.282,0.554,0.045,850.97,$
+meta,Meta Platforms,META,us-stock,0.160,0.478,0.045,305.08,$
+cf,CF Industries,CF,us-stock,0.319,0.634,0.045,868.47,$
+fisv,Fiserv,FISV,us-stock,0.255,0.630,0.045,21.04,$
+hsy,Hershey Company (The),HSY,us-stock,0.316,0.246,0.045,51.36,$
+tsco,Tractor Supply,TSCO,us-stock,0.235,0.365,0.045,552.05,$
+sndk,Sandisk,SNDK,us-stock,0.103,0.279,0.045,744.02,$
+mar,Marriott International,MAR,us-stock,0.276,0.280,0.045,906.57,$
+ed,Consolidated Edison,ED,us-stock,0.310,0.247,0.045,192.15,$
+mck,McKesson Corporation,MCK,us-stock,0.247,0.299,0.045,123.48,$
+acgl,Arch Capital Group,ACGL,us-stock,0.261,0.447,0.045,63.84,$
+bdx,Becton Dickinson,BDX,us-stock,0.283,0.645,0.045,553.36,$
+xom,ExxonMobil,XOM,us-stock,0.254,0.214,0.045,674.97,$
+syk,Stryker Corporation,SYK,us-stock,0.148,0.273,0.045,584.79,$
+jnj,Johnson & Johnson,JNJ,us-stock,0.337,0.348,0.045,674.58,$
+rf,Regions Financial Corporation,RF,us-stock,0.143,0.314,0.045,79.11,$
+rl,Ralph Lauren Corporation,RL,us-stock,0.132,0.408,0.045,335.06,$
+zbra,Zebra Technologies,ZBRA,us-stock,0.258,0.506,0.045,160.87,$
+pnc,PNC Financial Services,PNC,us-stock,0.233,0.560,0.045,959.07,$
+xyl,Xylem Inc.,XYL,us-stock,0.126,0.327,0.045,787.80,$
+ir,Ingersoll Rand,IR,us-stock,0.272,0.481,0.045,283.91,$
+cme,CME Group,CME,us-stock,0.177,0.499,0.045,338.25,$
+googl,Alphabet Inc. (Class A),GOOGL,us-stock,0.210,0.389,0.045,777.02,$
+gs,Goldman Sachs,GS,us-stock,0.211,0.231,0.045,649.10,$
+coin,Coinbase,COIN,us-stock,0.102,0.312,0.045,828.18,$
+wtw,Willis Towers Watson,WTW,us-stock,0.321,0.272,0.045,736.21,$
+orcl,Oracle Corporation,ORCL,us-stock,0.249,0.522,0.045,893.18,$
+lyv,Live Nation Entertainment,LYV,us-stock,0.309,0.477,0.045,814.52,$
+syy,Sysco,SYY,us-stock,0.236,0.542,0.045,220.63,$
+wynn,Wynn Resorts,WYNN,us-stock,0.090,0.302,0.045,895.05,$
+psa,Public Storage,PSA,us-stock,0.226,0.487,0.045,157.15,$
+itw,Illinois Tool Works,ITW,us-stock,0.186,0.599,0.045,593.70,$
+tdg,TransDigm Group,TDG,us-stock,0.311,0.243,0.045,506.11,$
+ter,Teradyne,TER,us-stock,0.104,0.351,0.045,20.49,$
+aig,American International Group,AIG,us-stock,0.144,0.633,0.045,982.03,$
+gm,General Motors,GM,us-stock,0.265,0.536,0.045,148.97,$
+pypl,PayPal,PYPL,us-stock,0.123,0.446,0.045,570.15,$
+ccl,Carnival,CCL,us-stock,0.315,0.249,0.045,734.68,$
+nclh,Norwegian Cruise Line Holdings,NCLH,us-stock,0.334,0.199,0.045,763.86,$
+cb,Chubb Limited,CB,us-stock,0.143,0.304,0.045,241.68,$
+wm,Waste Management,WM,us-stock,0.261,0.423,0.045,793.55,$
+aep,American Electric Power,AEP,us-stock,0.185,0.611,0.045,882.74,$
+gww,W. W. Grainger,GWW,us-stock,0.091,0.485,0.045,112.19,$
+ecl,Ecolab,ECL,us-stock,0.341,0.478,0.045,280.76,$
+tyl,Tyler Technologies,TYL,us-stock,0.280,0.452,0.045,574.46,$
+wrb,W. R. Berkley Corporation,WRB,us-stock,0.182,0.358,0.045,591.80,$
+tmo,Thermo Fisher Scientific,TMO,us-stock,0.323,0.217,0.045,259.07,$
+gpc,Genuine Parts Company,GPC,us-stock,0.343,0.285,0.045,411.78,$
+luv,Southwest Airlines,LUV,us-stock,0.301,0.342,0.045,794.73,$
+cien,Ciena,CIEN,us-stock,0.320,0.183,0.045,883.21,$
+tsn,Tyson Foods,TSN,us-stock,0.199,0.288,0.045,519.40,$
+cat,Caterpillar Inc.,CAT,us-stock,0.156,0.251,0.045,165.78,$
+usb,U.S. Bancorp,USB,us-stock,0.243,0.564,0.045,664.50,$
+eix,Edison International,EIX,us-stock,0.192,0.335,0.045,122.21,$
+wab,Wabtec,WAB,us-stock,0.262,0.405,0.045,594.88,$
+reg,Regency Centers,REG,us-stock,0.255,0.373,0.045,251.23,$
+t,AT&T,T,us-stock,0.115,0.458,0.045,143.38,$
+chd,Church & Dwight,CHD,us-stock,0.218,0.599,0.045,155.40,$
+ftv,Fortive,FTV,us-stock,0.125,0.614,0.045,521.47,$
+pcar,Paccar,PCAR,us-stock,0.189,0.636,0.045,641.25,$
+fitb,Fifth Third Bancorp,FITB,us-stock,0.317,0.522,0.045,823.09,$
+bby,Best Buy,BBY,us-stock,0.336,0.282,0.045,610.46,$
+hubb,Hubbell Incorporated,HUBB,us-stock,0.207,0.406,0.045,227.17,$
+xyz,"""Block",XYZ,us-stock,0.191,0.247,0.045,586.82,$
+csco,Cisco,CSCO,us-stock,0.287,0.473,0.045,515.70,$
+lite,Lumentum,LITE,us-stock,0.125,0.502,0.045,923.13,$
+sna,Snap-on,SNA,us-stock,0.241,0.212,0.045,384.43,$
+fix,Comfort Systems USA,FIX,us-stock,0.116,0.188,0.045,527.48,$
+j,Jacobs Solutions,J,us-stock,0.326,0.502,0.045,828.25,$
+ew,Edwards Lifesciences,EW,us-stock,0.243,0.263,0.045,902.59,$
+qcom,Qualcomm,QCOM,us-stock,0.242,0.593,0.045,536.12,$
+adi,Analog Devices,ADI,us-stock,0.283,0.224,0.045,662.80,$
+pfe,Pfizer,PFE,us-stock,0.324,0.433,0.045,11.19,$
+amp,Ameriprise Financial,AMP,us-stock,0.333,0.499,0.045,437.18,$
+spgi,S&P Global,SPGI,us-stock,0.194,0.591,0.045,700.67,$
+uhs,Universal Health Services,UHS,us-stock,0.196,0.621,0.045,487.30,$
+ual,United Airlines Holdings,UAL,us-stock,0.288,0.345,0.045,806.57,$
+dgx,Quest Diagnostics,DGX,us-stock,0.325,0.573,0.045,580.36,$
+apd,Air Products,APD,us-stock,0.195,0.300,0.045,768.20,$
+emr,Emerson Electric,EMR,us-stock,0.326,0.219,0.045,602.31,$
+nvr,"""NVR",NVR,us-stock,0.227,0.301,0.045,15.41,$
+ko,Coca-Cola Company (The),KO,us-stock,0.281,0.183,0.045,527.32,$
+v,Visa Inc.,V,us-stock,0.220,0.356,0.045,213.36,$
+brk.b,Berkshire Hathaway,BRK.B,us-stock,0.297,0.372,0.045,115.52,$
+doc,Healthpeak Properties,DOC,us-stock,0.195,0.455,0.045,268.69,$
+jbht,J.B. Hunt,JBHT,us-stock,0.225,0.445,0.045,615.76,$
+gl,Globe Life,GL,us-stock,0.348,0.367,0.045,211.66,$
+mchp,Microchip Technology,MCHP,us-stock,0.229,0.442,0.045,186.93,$
+sbac,SBA Communications,SBAC,us-stock,0.231,0.407,0.045,988.62,$
+dow,Dow Inc.,DOW,us-stock,0.236,0.544,0.045,404.15,$
+cmg,Chipotle Mexican Grill,CMG,us-stock,0.117,0.586,0.045,127.89,$
+mtd,Mettler Toledo,MTD,us-stock,0.142,0.548,0.045,949.75,$
+pg,Procter & Gamble,PG,us-stock,0.107,0.419,0.045,788.22,$
+orly,O’Reilly Automotive,ORLY,us-stock,0.296,0.469,0.045,687.72,$
+noc,Northrop Grumman,NOC,us-stock,0.094,0.363,0.045,639.52,$
+psx,Phillips 66,PSX,us-stock,0.297,0.567,0.045,476.95,$
+cof,Capital One,COF,us-stock,0.242,0.221,0.045,270.46,$
+kr,Kroger,KR,us-stock,0.180,0.466,0.045,727.25,$
+hum,Humana,HUM,us-stock,0.331,0.368,0.045,659.61,$
+blk,BlackRock,BLK,us-stock,0.157,0.633,0.045,66.89,$
+biib,Biogen,BIIB,us-stock,0.289,0.262,0.045,499.42,$
+kdp,Keurig Dr Pepper,KDP,us-stock,0.083,0.580,0.045,931.45,$
+smci,Supermicro,SMCI,us-stock,0.220,0.272,0.045,786.12,$
+idxx,Idexx Laboratories,IDXX,us-stock,0.218,0.508,0.045,619.04,$
+adm,Archer Daniels Midland,ADM,us-stock,0.262,0.349,0.045,658.47,$
+swk,Stanley Black & Decker,SWK,us-stock,0.343,0.221,0.045,283.18,$
+pru,Prudential Financial,PRU,us-stock,0.188,0.495,0.045,411.40,$
+cop,ConocoPhillips,COP,us-stock,0.134,0.187,0.045,706.59,$
+awk,American Water Works,AWK,us-stock,0.328,0.438,0.045,728.88,$
+cag,Conagra Brands,CAG,us-stock,0.231,0.454,0.045,354.00,$
+dash,DoorDash,DASH,us-stock,0.300,0.286,0.045,963.43,$
+panw,Palo Alto Networks,PANW,us-stock,0.203,0.370,0.045,14.60,$
+crm,Salesforce,CRM,us-stock,0.127,0.418,0.045,563.04,$
+a,Agilent Technologies,A,us-stock,0.216,0.340,0.045,125.84,$
+incy,Incyte,INCY,us-stock,0.219,0.301,0.045,542.52,$
+ebay,eBay Inc.,EBAY,us-stock,0.294,0.298,0.045,448.34,$
+mcd,McDonald's,MCD,us-stock,0.182,0.407,0.045,250.84,$
+mmm,3M,MMM,us-stock,0.172,0.545,0.045,684.78,$
+kvue,Kenvue,KVUE,us-stock,0.322,0.585,0.045,487.15,$
+kim,Kimco Realty,KIM,us-stock,0.150,0.360,0.045,790.77,$
+cpt,Camden Property Trust,CPT,us-stock,0.140,0.510,0.045,802.16,$
+exr,Extra Space Storage,EXR,us-stock,0.191,0.346,0.045,540.30,$
+unh,UnitedHealth Group,UNH,us-stock,0.269,0.304,0.045,294.42,$
+vst,Vistra Corp.,VST,us-stock,0.188,0.532,0.045,348.57,$
+rcl,Royal Caribbean Group,RCL,us-stock,0.230,0.264,0.045,320.73,$
+mnst,Monster Beverage,MNST,us-stock,0.139,0.450,0.045,190.96,$
+dlr,Digital Realty,DLR,us-stock,0.281,0.617,0.045,198.27,$
+mdlz,Mondelez International,MDLZ,us-stock,0.279,0.290,0.045,249.64,$
+avy,Avery Dennison,AVY,us-stock,0.152,0.288,0.045,836.59,$
+isrg,Intuitive Surgical,ISRG,us-stock,0.306,0.347,0.045,781.15,$
+cboe,Cboe Global Markets,CBOE,us-stock,0.112,0.217,0.045,956.22,$
+iff,International Flavors & Fragrances,IFF,us-stock,0.213,0.183,0.045,858.52,$
+pnr,Pentair,PNR,us-stock,0.339,0.579,0.045,377.48,$
+aos,A. O. Smith,AOS,us-stock,0.165,0.602,0.045,882.18,$
+sw,Smurfit Westrock,SW,us-stock,0.235,0.309,0.045,191.04,$
+chrw,C.H. Robinson,CHRW,us-stock,0.286,0.420,0.045,403.90,$
+gild,Gilead Sciences,GILD,us-stock,0.283,0.240,0.045,530.48,$
+trgp,Targa Resources,TRGP,us-stock,0.194,0.622,0.045,42.24,$
+zbh,Zimmer Biomet,ZBH,us-stock,0.174,0.584,0.045,778.14,$
+ulta,Ulta Beauty,ULTA,us-stock,0.203,0.237,0.045,523.02,$
+ndaq,"""Nasdaq",NDAQ,us-stock,0.165,0.184,0.045,677.36,$
+slb,Schlumberger,SLB,us-stock,0.182,0.227,0.045,367.99,$
+tsla,"""Tesla",TSLA,us-stock,0.313,0.268,0.045,270.22,$
+bac,Bank of America,BAC,us-stock,0.153,0.631,0.045,349.67,$
+adbe,Adobe Inc.,ADBE,us-stock,0.130,0.379,0.045,424.90,$
+lh,Labcorp,LH,us-stock,0.283,0.352,0.045,406.59,$
+cprt,Copart,CPRT,us-stock,0.202,0.449,0.045,979.48,$
+jpm,JPMorgan Chase,JPM,us-stock,0.265,0.563,0.045,723.61,$
+hst,Host Hotels & Resorts,HST,us-stock,0.297,0.441,0.045,857.75,$
+wsm,"""Williams-Sonoma",WSM,us-stock,0.133,0.556,0.045,741.16,$
+fico,Fair Isaac,FICO,us-stock,0.208,0.185,0.045,427.31,$
+frt,Federal Realty Investment Trust,FRT,us-stock,0.116,0.600,0.045,634.35,$
+amgn,Amgen,AMGN,us-stock,0.224,0.328,0.045,491.75,$
+mkc,McCormick & Company,MKC,us-stock,0.148,0.583,0.045,57.23,$
+unp,Union Pacific Corporation,UNP,us-stock,0.107,0.257,0.045,223.31,$
+ups,United Parcel Service,UPS,us-stock,0.149,0.574,0.045,105.34,$
+ttwo,Take-Two Interactive,TTWO,us-stock,0.281,0.302,0.045,366.70,$
+bg,Bunge Global,BG,us-stock,0.231,0.561,0.045,350.70,$
+bkr,Baker Hughes,BKR,us-stock,0.191,0.345,0.045,682.79,$
+aee,Ameren,AEE,us-stock,0.244,0.451,0.045,653.37,$
+ajg,Arthur J. Gallagher & Co.,AJG,us-stock,0.225,0.640,0.045,291.76,$
+podd,Insulet Corporation,PODD,us-stock,0.168,0.420,0.045,777.00,$
+ivz,Invesco,IVZ,us-stock,0.201,0.217,0.045,617.53,$
+bkng,Booking Holdings,BKNG,us-stock,0.205,0.630,0.045,869.58,$
+rtx,RTX Corporation,RTX,us-stock,0.253,0.616,0.045,427.60,$
+tmus,T-Mobile US,TMUS,us-stock,0.245,0.370,0.045,908.00,$
+f,Ford Motor Company,F,us-stock,0.101,0.342,0.045,320.35,$
+mtb,M&T Bank,MTB,us-stock,0.256,0.514,0.045,609.33,$
+gis,General Mills,GIS,us-stock,0.187,0.597,0.045,783.16,$
+mpc,Marathon Petroleum,MPC,us-stock,0.333,0.532,0.045,525.73,$
+ctra,Coterra,CTRA,us-stock,0.202,0.259,0.045,855.67,$
+kmb,Kimberly-Clark,KMB,us-stock,0.114,0.290,0.045,259.13,$
+vmc,Vulcan Materials Company,VMC,us-stock,0.281,0.532,0.045,218.47,$
+ceg,Constellation Energy,CEG,us-stock,0.187,0.225,0.045,937.43,$
+wday,"""Workday",WDAY,us-stock,0.208,0.205,0.045,773.22,$
+tjx,TJX Companies,TJX,us-stock,0.221,0.648,0.045,112.89,$
+avgo,Broadcom,AVGO,us-stock,0.247,0.220,0.045,932.27,$
+hpe,Hewlett Packard Enterprise,HPE,us-stock,0.185,0.288,0.045,740.22,$
+ntap,NetApp,NTAP,us-stock,0.200,0.239,0.045,531.47,$
+fe,FirstEnergy,FE,us-stock,0.126,0.197,0.045,363.27,$
+ice,Intercontinental Exchange,ICE,us-stock,0.327,0.586,0.045,472.52,$
+nke,"""Nike",NKE,us-stock,0.315,0.619,0.045,553.06,$
+wy,Weyerhaeuser,WY,us-stock,0.116,0.626,0.045,543.89,$
+pwr,Quanta Services,PWR,us-stock,0.240,0.395,0.045,751.42,$
+pm,Philip Morris International,PM,us-stock,0.317,0.384,0.045,643.39,$
+lin,Linde plc,LIN,us-stock,0.224,0.607,0.045,486.84,$
+ctas,Cintas,CTAS,us-stock,0.141,0.222,0.045,314.79,$
+aph,Amphenol,APH,us-stock,0.191,0.253,0.045,20.45,$
+cci,Crown Castle,CCI,us-stock,0.221,0.536,0.045,144.94,$
+ftnt,Fortinet,FTNT,us-stock,0.157,0.431,0.045,690.89,$
+dte,DTE Energy,DTE,us-stock,0.213,0.535,0.045,306.61,$
+wat,Waters Corporation,WAT,us-stock,0.287,0.555,0.045,601.03,$
+cohr,Coherent Corp.,COHR,us-stock,0.295,0.438,0.045,196.69,$
+amt,American Tower,AMT,us-stock,0.318,0.385,0.045,257.40,$
+sats,EchoStar,SATS,us-stock,0.273,0.484,0.045,830.14,$
+omc,Omnicom Group,OMC,us-stock,0.140,0.217,0.045,629.07,$
+vz,Verizon,VZ,us-stock,0.219,0.556,0.045,617.08,$
+lvs,Las Vegas Sands,LVS,us-stock,0.267,0.308,0.045,651.97,$
+oke,Oneok,OKE,us-stock,0.224,0.306,0.045,196.12,$
+zts,Zoetis,ZTS,us-stock,0.098,0.244,0.045,119.25,$
+csx,CSX Corporation,CSX,us-stock,0.203,0.393,0.045,703.47,$
+solv,Solventum,SOLV,us-stock,0.213,0.331,0.045,160.63,$
+hd,Home Depot (The),HD,us-stock,0.342,0.190,0.045,972.61,$
+uri,United Rentals,URI,us-stock,0.156,0.239,0.045,444.03,$
+xel,Xcel Energy,XEL,us-stock,0.082,0.222,0.045,24.58,$
+tpl,Texas Pacific Land Corporation,TPL,us-stock,0.139,0.378,0.045,787.87,$
+key,KeyCorp,KEY,us-stock,0.215,0.355,0.045,699.97,$
+carr,Carrier Global,CARR,us-stock,0.089,0.218,0.045,753.06,$
+vtr,Ventas,VTR,us-stock,0.119,0.305,0.045,398.50,$
+met,MetLife,MET,us-stock,0.227,0.265,0.045,896.74,$
+apa,APA Corporation,APA,us-stock,0.148,0.359,0.045,22.49,$
+nem,Newmont,NEM,us-stock,0.343,0.516,0.045,390.95,$
+odfl,Old Dominion,ODFL,us-stock,0.343,0.296,0.045,994.59,$
+vtrs,Viatris,VTRS,us-stock,0.134,0.526,0.045,103.02,$
+crwd,CrowdStrike,CRWD,us-stock,0.260,0.278,0.045,395.23,$
+nue,Nucor,NUE,us-stock,0.340,0.620,0.045,167.03,$
+cinf,Cincinnati Financial,CINF,us-stock,0.277,0.530,0.045,554.08,$
+erie,Erie Indemnity,ERIE,us-stock,0.113,0.406,0.045,305.82,$
+expe,Expedia Group,EXPE,us-stock,0.177,0.204,0.045,670.03,$
+cpb,Campbell's Company (The),CPB,us-stock,0.343,0.291,0.045,439.82,$
+es,Eversource Energy,ES,us-stock,0.084,0.553,0.045,588.85,$
+mos,Mosaic Company (The),MOS,us-stock,0.187,0.294,0.045,969.15,$
+hsic,Henry Schein,HSIC,us-stock,0.237,0.505,0.045,691.52,$
+udr,"""UDR",UDR,us-stock,0.122,0.542,0.045,256.24,$
+trv,Travelers Companies (The),TRV,us-stock,0.215,0.502,0.045,345.04,$
+adp,Automatic Data Processing,ADP,us-stock,0.342,0.537,0.045,69.45,$
+wmt,Walmart,WMT,us-stock,0.176,0.252,0.045,540.99,$
+tel,TE Connectivity,TEL,us-stock,0.109,0.409,0.045,323.57,$
+dal,Delta Air Lines,DAL,us-stock,0.231,0.483,0.045,353.84,$
+rmd,ResMed,RMD,us-stock,0.321,0.525,0.045,31.14,$
+ctsh,Cognizant,CTSH,us-stock,0.182,0.520,0.045,258.19,$
+nsc,Norfolk Southern,NSC,us-stock,0.091,0.512,0.045,563.43,$
+amcr,Amcor,AMCR,us-stock,0.227,0.410,0.045,571.03,$
+aon,Aon plc,AON,us-stock,0.227,0.332,0.045,473.71,$
+ph,Parker Hannifin,PH,us-stock,0.314,0.461,0.045,861.96,$
+crl,Charles River Laboratories,CRL,us-stock,0.123,0.430,0.045,454.89,$
+lulu,Lululemon Athletica,LULU,us-stock,0.301,0.435,0.045,459.54,$
+evrg,Evergy,EVRG,us-stock,0.289,0.418,0.045,736.32,$
+msft,Microsoft,MSFT,us-stock,0.318,0.471,0.045,420.37,$
+mpwr,Monolithic Power Systems,MPWR,us-stock,0.247,0.331,0.045,72.71,$
+ste,Steris,STE,us-stock,0.341,0.565,0.045,197.97,$
+dxcm,Dexcom,DXCM,us-stock,0.264,0.540,0.045,162.59,$
+lhx,L3Harris,LHX,us-stock,0.156,0.373,0.045,328.80,$
+app,AppLovin,APP,us-stock,0.106,0.490,0.045,53.34,$
+ffiv,"""F5",FFIV,us-stock,0.333,0.264,0.045,40.96,$
+tech,Bio-Techne,TECH,us-stock,0.109,0.270,0.045,41.50,$
+keys,Keysight Technologies,KEYS,us-stock,0.253,0.363,0.045,495.01,$
+hlt,Hilton Worldwide,HLT,us-stock,0.248,0.457,0.045,58.59,$
+ppl,PPL Corporation,PPL,us-stock,0.140,0.517,0.045,22.96,$
+amzn,Amazon,AMZN,us-stock,0.329,0.488,0.045,929.12,$
+swks,Skyworks Solutions,SWKS,us-stock,0.305,0.400,0.045,642.53,$
+crh,CRH plc,CRH,us-stock,0.177,0.529,0.045,891.53,$
+mrk,Merck & Co.,MRK,us-stock,0.302,0.553,0.045,67.72,$
+epam,EPAM Systems,EPAM,us-stock,0.247,0.429,0.045,736.96,$
+tpr,"""Tapestry",TPR,us-stock,0.305,0.217,0.045,223.74,$
+el,Estée Lauder Companies (The),EL,us-stock,0.220,0.228,0.045,238.71,$
+ato,Atmos Energy,ATO,us-stock,0.184,0.271,0.045,660.31,$
+fds,FactSet,FDS,us-stock,0.234,0.625,0.045,562.84,$
+wbd,Warner Bros. Discovery,WBD,us-stock,0.231,0.531,0.045,768.62,$
+wmb,Williams Companies,WMB,us-stock,0.236,0.497,0.045,705.52,$
+eme,Emcor,EME,us-stock,0.195,0.229,0.045,794.54,$
+o,Realty Income,O,us-stock,0.228,0.417,0.045,660.96,$
+c,Citigroup,C,us-stock,0.224,0.462,0.045,934.18,$
+bxp,"""BXP",BXP,us-stock,0.324,0.439,0.045,996.88,$
+vlto,Veralto,VLTO,us-stock,0.308,0.374,0.045,636.91,$
+etr,Entergy,ETR,us-stock,0.303,0.332,0.045,248.32,$
+wec,WEC Energy Group,WEC,us-stock,0.227,0.356,0.045,554.74,$
+pltr,Palantir Technologies,PLTR,us-stock,0.281,0.349,0.045,457.88,$
+cdns,Cadence Design Systems,CDNS,us-stock,0.339,0.180,0.045,44.32,$
+spg,Simon Property Group,SPG,us-stock,0.157,0.188,0.045,143.73,$
+rjf,Raymond James Financial,RJF,us-stock,0.320,0.183,0.045,984.55,$
+abbv,AbbVie,ABBV,us-stock,0.138,0.328,0.045,773.81,$
+tko,TKO Group Holdings,TKO,us-stock,0.335,0.566,0.045,919.92,$
+sjm,J.M. Smucker Company (The),SJM,us-stock,0.218,0.448,0.045,575.90,$
+dri,Darden Restaurants,DRI,us-stock,0.105,0.396,0.045,164.55,$
+mrsh,Marsh McLennan,MRSH,us-stock,0.152,0.598,0.045,257.36,$
+has,Hasbro,HAS,us-stock,0.149,0.321,0.045,574.78,$
+clx,Clorox,CLX,us-stock,0.234,0.282,0.045,86.43,$
+gehc,GE HealthCare,GEHC,us-stock,0.168,0.407,0.045,493.39,$
+wst,West Pharmaceutical Services,WST,us-stock,0.323,0.510,0.045,821.32,$
+psky,Paramount Skydance Corporation,PSKY,us-stock,0.106,0.482,0.045,47.00,$
+nwsa,News Corp (Class A),NWSA,us-stock,0.298,0.359,0.045,782.32,$
+pcg,PG&E Corporation,PCG,us-stock,0.329,0.337,0.045,880.99,$
+cvx,Chevron Corporation,CVX,us-stock,0.197,0.617,0.045,129.34,$
+len,Lennar,LEN,us-stock,0.288,0.531,0.045,850.98,$
+alb,Albemarle Corporation,ALB,us-stock,0.331,0.478,0.045,635.87,$
+mdt,Medtronic,MDT,us-stock,0.095,0.426,0.045,326.12,$
+intu,Intuit,INTU,us-stock,0.233,0.334,0.045,700.79,$
+cl,Colgate-Palmolive,CL,us-stock,0.121,0.497,0.045,997.39,$
+cfg,Citizens Financial Group,CFG,us-stock,0.342,0.534,0.045,579.50,$
+aiz,Assurant,AIZ,us-stock,0.104,0.383,0.045,788.50,$
+algn,Align Technology,ALGN,us-stock,0.120,0.338,0.045,481.10,$
+alle,Allegion,ALLE,us-stock,0.281,0.438,0.045,269.93,$
+gen,Gen Digital,GEN,us-stock,0.188,0.384,0.045,700.89,$
+mlm,Martin Marietta Materials,MLM,us-stock,0.286,0.406,0.045,206.13,$
+ares,Ares Management,ARES,us-stock,0.187,0.449,0.045,565.56,$
+klac,KLA Corporation,KLAC,us-stock,0.349,0.426,0.045,249.89,$
+uber,Uber,UBER,us-stock,0.152,0.382,0.045,687.89,$
+yum,Yum! Brands,YUM,us-stock,0.236,0.233,0.045,419.45,$
+nxpi,NXP Semiconductors,NXPI,us-stock,0.179,0.270,0.045,351.08,$
+azo,AutoZone,AZO,us-stock,0.257,0.542,0.045,177.56,$
+pld,Prologis,PLD,us-stock,0.174,0.566,0.045,804.77,$
+bsx,Boston Scientific,BSX,us-stock,0.248,0.387,0.045,924.97,$
+cms,CMS Energy,CMS,us-stock,0.143,0.502,0.045,164.43,$
+stz,Constellation Brands,STZ,us-stock,0.277,0.220,0.045,742.19,$
+cvs,CVS Health,CVS,us-stock,0.146,0.472,0.045,156.20,$
+peg,Public Service Enterprise Group,PEG,us-stock,0.305,0.315,0.045,349.84,$
+akam,Akamai Technologies,AKAM,us-stock,0.297,0.323,0.045,476.48,$
+ball,Ball Corporation,BALL,us-stock,0.170,0.528,0.045,219.76,$
+msci,MSCI Inc.,MSCI,us-stock,0.228,0.533,0.045,553.31,$
+eurusd,EUR/USD,EURUSD,forex,0.031,0.149,0.045,104.41,$
+usdjpy,USD/JPY,USDJPY,forex,0.037,0.081,0.045,135.95,$
+gbpusd,GBP/USD,GBPUSD,forex,0.018,0.068,0.045,9.49,$
+usdchf,USD/CHF,USDCHF,forex,-0.024,0.117,0.045,41.06,$
+audusd,AUD/USD,AUDUSD,forex,0.010,0.144,0.045,10.46,$
+usdcad,USD/CAD,USDCAD,forex,0.036,0.113,0.045,136.97,$
+nzdusd,NZD/USD,NZDUSD,forex,-0.003,0.052,0.045,44.23,$
+eurgbp,EUR/GBP,EURGBP,forex,0.065,0.083,0.045,146.98,$
+eurjpy,EUR/JPY,EURJPY,forex,0.016,0.118,0.045,135.63,$
+gbpjpy,GBP/JPY,GBPJPY,forex,0.013,0.106,0.045,13.66,$
+chfjpy,CHF/JPY,CHFJPY,forex,-0.024,0.146,0.045,84.32,$
+eurchf,EUR/CHF,EURCHF,forex,0.043,0.044,0.045,138.38,$
+audjpy,AUD/JPY,AUDJPY,forex,-0.010,0.094,0.045,111.79,$
+audnzd,AUD/NZD,AUDNZD,forex,-0.048,0.115,0.045,53.63,$
+usdinr,USD/INR,USDINR,forex,-0.011,0.150,0.045,146.80,$
+eurinr,EUR/INR,EURINR,forex,-0.014,0.047,0.045,39.02,$
+gbpinr,GBP/INR,GBPINR,forex,0.000,0.150,0.045,148.56,$
+jpyinr,JPY/INR,JPYINR,forex,0.073,0.144,0.045,34.22,$
+usdcny,USD/CNY,USDCNY,forex,-0.006,0.083,0.045,21.02,$
+usdzar,USD/ZAR,USDZAR,forex,0.045,0.097,0.045,101.86,$
+usdtry,USD/TRY,USDTRY,forex,0.063,0.116,0.045,62.89,$
+usdmxn,USD/MXN,USDMXN,forex,0.024,0.087,0.045,47.20,$
+usdbrl,USD/BRL,USDBRL,forex,0.029,0.089,0.045,20.20,$
+usdrub,USD/RUB,USDRUB,forex,0.035,0.104,0.045,102.77,$
+usdkrw,USD/KRW,USDKRW,forex,-0.024,0.055,0.045,103.44,$
+usdsgd,USD/SGD,USDSGD,forex,0.067,0.140,0.045,64.79,$
+usdhkd,USD/HKD,USDHKD,forex,0.068,0.125,0.045,98.61,$
+usdsek,USD/SEK,USDSEK,forex,0.023,0.057,0.045,10.64,$
+usdnok,USD/NOK,USDNOK,forex,0.019,0.119,0.045,28.03,$
+usddkk,USD/DKK,USDDKK,forex,0.059,0.056,0.045,4.91,$
+euraud,EUR/AUD,EURAUD,forex,-0.009,0.147,0.045,144.20,$
+eurcad,EUR/CAD,EURCAD,forex,-0.011,0.122,0.045,123.34,$
+eurnzd,EUR/NZD,EURNZD,forex,0.033,0.121,0.045,23.22,$
+gbpchf,GBP/CHF,GBPCHF,forex,-0.026,0.054,0.045,4.42,$
+gbpaud,GBP/AUD,GBPAUD,forex,0.078,0.108,0.045,91.04,$
+gbpcad,GBP/CAD,GBPCAD,forex,0.030,0.106,0.045,35.02,$
+gbpnzd,GBP/NZD,GBPNZD,forex,-0.047,0.049,0.045,117.08,$
+audchf,AUD/CHF,AUDCHF,forex,-0.033,0.133,0.045,70.58,$
+audcad,AUD/CAD,AUDCAD,forex,0.034,0.060,0.045,58.43,$
+cadchf,CAD/CHF,CADCHF,forex,0.012,0.058,0.045,34.33,$
+cadjpy,CAD/JPY,CADJPY,forex,0.003,0.147,0.045,138.85,$
+nzdjpy,NZD/JPY,NZDJPY,forex,0.074,0.064,0.045,100.87,$
+nzdchf,NZD/CHF,NZDCHF,forex,-0.024,0.063,0.045,26.97,$
+nzdcad,NZD/CAD,NZDCAD,forex,0.074,0.088,0.045,92.75,$
+sgdjpy,SGD/JPY,SGDJPY,forex,0.039,0.135,0.045,133.19,$
+hkdjpy,HKD/JPY,HKDJPY,forex,0.006,0.125,0.045,91.39,$
+zarjpy,ZAR/JPY,ZARJPY,forex,0.057,0.119,0.045,59.43,$
+tryjpy,TRY/JPY,TRYJPY,forex,0.072,0.103,0.045,80.66,$
+clf,Crude Oil (WTI),CL=F,commodity,0.088,0.352,0.045,240.63,$
+bzf,Brent Crude,BZ=F,commodity,0.040,0.271,0.045,4394.95,$
+ngf,Natural Gas,NG=F,commodity,0.109,0.201,0.045,2712.45,$
+hof,Heating Oil,HO=F,commodity,0.119,0.133,0.045,1967.62,$
+rbf,RBOB Gas,RB=F,commodity,0.099,0.438,0.045,989.76,$
+gcf,Gold,GC=F,commodity,0.070,0.412,0.045,3879.70,$
+sif,Silver,SI=F,commodity,0.056,0.175,0.045,1507.38,$
+hgf,Copper,HG=F,commodity,0.113,0.348,0.045,4523.19,$
+plf,Platinum,PL=F,commodity,0.072,0.333,0.045,497.68,$
+paf,Palladium,PA=F,commodity,0.075,0.179,0.045,2947.97,$
+zcf,Corn,ZC=F,commodity,0.110,0.300,0.045,1995.68,$
+zsf,Soybeans,ZS=F,commodity,0.059,0.128,0.045,2295.72,$
+zwf,Wheat,ZW=F,commodity,0.111,0.416,0.045,4418.61,$
+zrf,Rough Rice,ZR=F,commodity,0.038,0.227,0.045,3260.45,$
+zof,Oats,ZO=F,commodity,0.094,0.174,0.045,3679.65,$
+lef,Live Cattle,LE=F,commodity,0.038,0.353,0.045,3188.66,$
+gff,Feeder Cattle,GF=F,commodity,0.038,0.353,0.045,3648.03,$
+hef,Lean Hogs,HE=F,commodity,0.118,0.322,0.045,841.50,$
+ccf,Cocoa,CC=F,commodity,0.080,0.134,0.045,895.88,$
+kcf,Coffee,KC=F,commodity,0.060,0.408,0.045,4320.23,$
+ctf,Cotton,CT=F,commodity,0.045,0.168,0.045,3857.33,$
+sbf,Sugar,SB=F,commodity,0.035,0.222,0.045,3664.30,$
+lbsf,Lumber,LBS=F,commodity,0.116,0.215,0.045,944.45,$
+ojf,Orange Juice,OJ=F,commodity,0.111,0.437,0.045,67.49,$
+uxf,Uranium,UX=F,commodity,0.099,0.124,0.045,2513.26,$

@@ -1,0 +1,57 @@
+# ── Python ──────────────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# ── Node ────────────────────────────────────────────
+node_modules/
+package-lock.json
+
+# ── Flutter build artifacts ─────────────────────────
+blackswan_nova_app/build/
+blackswan_nova_app/.dart_tool/
+blackswan_nova_app/.idea/
+blackswan_nova_app/.xdg_config/
+blackswan_nova_app/.flutter-plugins-dependencies
+blackswan_nova_app/.flutter_config/
+
+# ── Secrets / Environment ──────────────────────────
+.env
+backend/.env
+
+# ── OS ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor / IDE ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Scratch / utility files ─────────────────────────
+link.txt
+check_syntax.js
+test.js
+
+# ── Utility scripts with hardcoded credentials ─────
+inject_from_supabase.py
+inject_instruments.py
+delete_old_indices.py
+sync_rest.py
+master_sync.py
+seed_financials.py
+fix_base_prices.py
+fix_task.py
+get_logs.py
+parse_json.py
+rename_charts.py
+process_logo.py
+process_logo_hq.py
+test_crop.py
+test_nse.py
+test_yf.py
+merge_frontend.py
+list_scripts.py
