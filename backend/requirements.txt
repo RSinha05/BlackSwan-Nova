@@ -4,3 +4,4 @@ numpy
 scipy
 httpx
 python-dotenv
+yfinance

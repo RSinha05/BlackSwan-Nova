@@ -2084,7 +2084,7 @@
         const sig = volOv > 0 ? volOv / 100 : asset.sig;
 
         try {
-          const response = await fetch('http://localhost:8000/simulate', {
+          const response = await fetch(`${API_BASE}/simulate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -2124,7 +2124,7 @@
           drawDist(res.pnl, res.var95, res.cvar95, asset.ccy);
         } catch (err) {
           console.error(err);
-          alert("Simulation failed. Error: " + err.message + "\n\nEnsure Python backend is running on http://localhost:8000");
+          alert("Simulation failed. Error: " + err.message + "\n\nEnsure Python backend is running on " + API_BASE);
         } finally {
           ['ld-dist', 'ld-paths'].forEach(id => document.getElementById(id).style.display = 'none');
           badge.className = 'sim-badge'; badge.textContent = '● READY';
@@ -2452,7 +2452,7 @@
       const loss = val * Math.abs(sc.sensex / 100);
 
       try {
-        const response = await fetch('http://localhost:8000/stress', {
+        const response = await fetch(`${API_BASE}/stress`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -2597,7 +2597,7 @@
       }));
 
       try {
-        const response = await fetch('http://localhost:8000/portfolio', {
+        const response = await fetch(`${API_BASE}/portfolio`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -2805,7 +2805,7 @@
 
     async function fetchNews() {
       try {
-        const r = await fetch(`http://localhost:8000/news?region=${_newsRegion}&limit=50`);
+        const r = await fetch(`${API_BASE}/news?region=${_newsRegion}&limit=50`);
         if (!r.ok) throw new Error('News fetch failed');
         const data = await r.json();
         _newsData = data.articles || [];
@@ -2834,7 +2834,7 @@
         document.getElementById('news-feed').innerHTML = `
           <div class="panel" style="text-align:center; padding:2rem; color:var(--text3);">
             <div style="font-size:24px; margin-bottom:8px;">📡</div>
-            <div style="font-family:var(--mono); font-size:11px;">Unable to fetch news. Ensure backend is running on http://localhost:8000</div>
+            <div style="font-family:var(--mono); font-size:11px;">Unable to fetch news. Ensure backend is running on ${API_BASE}</div>
             <div style="font-size:10px; margin-top:4px; color:var(--text3);">Run: cd backend && uvicorn main:app --reload</div>
           </div>`;
       }
@@ -2842,7 +2842,7 @@
 
     async function fetchSentimentSummary() {
       try {
-        const r = await fetch('http://localhost:8000/news/sentiment-summary');
+        const r = await fetch(`${API_BASE}/news/sentiment-summary`);
         if (!r.ok) return;
         const s = await r.json();
 
@@ -2959,6 +2959,11 @@
         fetchNews();
       }, 300000); // 5 minutes
     }
+
+    // ── API BASE URL (auto-detect local vs deployed) ───────────────────────
+    const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:'
+      ? 'http://localhost:8000'
+      : 'https://blackswan-nova-api.onrender.com';
 
     // ── BOOT ──────────────────────────────────────────────────────────────────
     const SUPABASE_URL = "https://pnjfbhgztzjkuhowbayu.supabase.co";
