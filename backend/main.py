@@ -168,6 +168,10 @@ def _run_simulation(req_dict: dict) -> dict:
         "pnl": pnl.tolist(),
     }
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
 @app.post("/simulate")
 async def simulate(req: SimRequest):
     loop = asyncio.get_event_loop()

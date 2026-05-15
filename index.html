@@ -147,6 +147,54 @@
       animation: pulse 1s ease-in-out infinite
     }
 
+    /* Backend warm-up toast */
+    .backend-toast {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10000;
+      background: rgba(15, 18, 25, 0.95);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 12px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transform: translateX(120%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+    }
+    .backend-toast.visible {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .backend-toast.success {
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+    .backend-toast.error {
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+    .backend-toast .toast-spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(59, 130, 246, 0.2);
+      border-top-color: var(--blue2);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    .backend-toast .toast-icon {
+      font-size: 14px;
+      line-height: 1;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
     @keyframes pulse {
 
       0%,
@@ -1339,6 +1387,12 @@
   </div>
 
   <!-- APP ENGINE -->
+  <!-- Backend warm-up toast -->
+  <div id="backend-toast" class="backend-toast">
+    <div class="toast-spinner" id="toast-spinner"></div>
+    <span id="toast-msg">Waking up backend…</span>
+  </div>
+
   <div id="app-engine" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%; height: 100%;">
 
 
@@ -2084,7 +2138,7 @@
         const sig = volOv > 0 ? volOv / 100 : asset.sig;
 
         try {
-          const response = await fetch(`${API_BASE}/simulate`, {
+          const response = await fetchWithRetry(`${API_BASE}/simulate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -2096,8 +2150,7 @@
               inv: inv,
               asset_class: asset.cls
             })
-          });
-          if (!response.ok) throw new Error("Backend simulation failed");
+          }, 3);
           const res = await response.json();
 
           const sharpe = (mu - asset.rf) / sig;
@@ -2124,7 +2177,8 @@
           drawDist(res.pnl, res.var95, res.cvar95, asset.ccy);
         } catch (err) {
           console.error(err);
-          alert("Simulation failed. Error: " + err.message + "\n\nEnsure Python backend is running on " + API_BASE);
+          showToast('Simulation failed — backend may be cold-starting', 'error');
+          setTimeout(hideToast, 5000);
         } finally {
           ['ld-dist', 'ld-paths'].forEach(id => document.getElementById(id).style.display = 'none');
           badge.className = 'sim-badge'; badge.textContent = '● READY';
@@ -2452,7 +2506,7 @@
       const loss = val * Math.abs(sc.sensex / 100);
 
       try {
-        const response = await fetch(`${API_BASE}/stress`, {
+        const response = await fetchWithRetry(`${API_BASE}/stress`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -2462,7 +2516,7 @@
             shock_pct: Math.abs(sc.sensex / 100),
             vol_shock_factor: 2.0
           })
-        });
+        }, 3);
         const res = await response.json();
         const recText = res.recovery_days !== -1 ? `${Math.round(res.recovery_months)} months` : '> 3 years';
 
@@ -2597,7 +2651,7 @@
       }));
 
       try {
-        const response = await fetch(`${API_BASE}/portfolio`, {
+        const response = await fetchWithRetry(`${API_BASE}/portfolio`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -2605,8 +2659,7 @@
             inv: inv,
             N: N
           })
-        });
-        if (!response.ok) throw new Error("Backend portfolio simulation failed");
+        }, 3);
         const res = await response.json();
 
         const wts = reqAssets.map(a => a.weight);
@@ -2805,8 +2858,7 @@
 
     async function fetchNews() {
       try {
-        const r = await fetch(`${API_BASE}/news?region=${_newsRegion}&limit=50`);
-        if (!r.ok) throw new Error('News fetch failed');
+        const r = await fetchWithRetry(`${API_BASE}/news?region=${_newsRegion}&limit=50`, {}, 2);
         const data = await r.json();
         _newsData = data.articles || [];
 
@@ -2842,8 +2894,7 @@
 
     async function fetchSentimentSummary() {
       try {
-        const r = await fetch(`${API_BASE}/news/sentiment-summary`);
-        if (!r.ok) return;
+        const r = await fetchWithRetry(`${API_BASE}/news/sentiment-summary`, {}, 2);
         const s = await r.json();
 
         // Market mood
@@ -2964,6 +3015,73 @@
     const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:'
       ? 'http://localhost:8000'
       : 'https://blackswan-nova.onrender.com';
+
+    // ── BACKEND WARM-UP & RETRY SYSTEM ───────────────────────────────────────
+    let _backendReady = false;
+
+    function showToast(msg, type = 'loading') {
+      const toast = document.getElementById('backend-toast');
+      const spinner = document.getElementById('toast-spinner');
+      const msgEl = document.getElementById('toast-msg');
+      msgEl.textContent = msg;
+      toast.className = 'backend-toast visible';
+      if (type === 'loading') {
+        spinner.style.display = 'block';
+        spinner.className = 'toast-spinner';
+      } else if (type === 'success') {
+        spinner.style.display = 'none';
+        toast.classList.add('success');
+        msgEl.innerHTML = '<span class="toast-icon" style="color:var(--green)">✓</span> ' + msg;
+      } else if (type === 'error') {
+        spinner.style.display = 'none';
+        toast.classList.add('error');
+        msgEl.innerHTML = '<span class="toast-icon" style="color:var(--red)">✗</span> ' + msg;
+      }
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('backend-toast');
+      toast.classList.remove('visible');
+    }
+
+    async function fetchWithRetry(url, options = {}, maxRetries = 3) {
+      for (let attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+          const controller = new AbortController();
+          const timeoutMs = attempt === 0 ? 90000 : 120000; // 90s first try, 120s retries
+          const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+          const response = await fetch(url, { ...options, signal: controller.signal });
+          clearTimeout(timeoutId);
+
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          _backendReady = true;
+          return response;
+        } catch (err) {
+          const isLast = attempt === maxRetries - 1;
+          if (isLast) throw err;
+
+          // Show retry toast on first failure (likely cold start)
+          const delay = Math.min(3000 * Math.pow(2, attempt), 10000);
+          showToast(`Backend waking up… retry ${attempt + 1}/${maxRetries - 1} (${Math.round(delay/1000)}s)`, 'loading');
+          await new Promise(r => setTimeout(r, delay));
+        }
+      }
+    }
+
+    // Warm-up ping — fires immediately on page load to wake Render
+    (async function warmUpBackend() {
+      if (API_BASE.includes('localhost')) { _backendReady = true; return; }
+      showToast('Connecting to backend…', 'loading');
+      try {
+        await fetchWithRetry(`${API_BASE}/health`, {}, 4);
+        showToast('Backend connected', 'success');
+        setTimeout(hideToast, 2000);
+      } catch (e) {
+        showToast('Backend unavailable — retries exhausted', 'error');
+        setTimeout(hideToast, 5000);
+      }
+    })();
 
     // ── BOOT ──────────────────────────────────────────────────────────────────
     const SUPABASE_URL = "https://pnjfbhgztzjkuhowbayu.supabase.co";
