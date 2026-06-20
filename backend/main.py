@@ -168,6 +168,10 @@ def _run_simulation(req_dict: dict) -> dict:
         "pnl": pnl.tolist(),
     }
 
+@app.get("/")
+async def root():
+    return {"message": "BLACKSWAN NOVA Backend Engine is running.", "status": "ok"}
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
