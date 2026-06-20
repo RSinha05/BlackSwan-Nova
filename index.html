@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>BLACKSWAN NOVA — Monte Carlo Risk Engine</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js">
 
@@ -16,25 +16,25 @@
   </script>
   <style>
     :root {
-      --bg: #0d0f12;
-      --bg2: #13171d;
-      --bg3: #1a2233;
-      --bg4: #1e2840;
-      --bg5: #232e4a;
-      --border: rgba(255, 255, 255, 0.08);
-      --border2: rgba(255, 255, 255, 0.12);
-      --border3: rgba(255, 255, 255, 0.20);
-      --text: rgba(255, 255, 255, 0.90);
-      --text2: rgba(255, 255, 255, 0.50);
-      --text3: rgba(255, 255, 255, 0.35);
-      --blue: #1D9E75;
-      --blue2: #5DCAA7;
-      --purple: #7F77DD;
-      --cyan: #5DCAA7;
-      --green: #1D9E75;
-      --red: #D85A30;
-      --amber: #EF9F27;
-      --gold: #EF9F27;
+      --bg: #050505;
+      --bg2: rgba(13, 15, 18, 0.6);
+      --bg3: rgba(26, 34, 51, 0.4);
+      --bg4: rgba(30, 40, 64, 0.5);
+      --bg5: rgba(35, 46, 74, 0.6);
+      --border: rgba(255, 255, 255, 0.05);
+      --border2: rgba(255, 255, 255, 0.10);
+      --border3: rgba(255, 255, 255, 0.15);
+      --text: rgba(255, 255, 255, 0.95);
+      --text2: rgba(255, 255, 255, 0.65);
+      --text3: rgba(255, 255, 255, 0.40);
+      --blue: #3b82f6;
+      --blue2: #60a5fa;
+      --purple: #8b5cf6;
+      --cyan: #2dd4bf;
+      --green: #10b981;
+      --red: #ef4444;
+      --amber: #f59e0b;
+      --gold: #fbbf24;
       --font: 'Inter', 'Segoe UI', sans-serif;
       --mono: 'JetBrains Mono', monospace;
       --r: 8px;
@@ -48,12 +48,20 @@
     }
 
     body {
-      background: var(--bg);
+      background: linear-gradient(135deg, #050505 0%, #0a0a0a 40%, #050a15 100%);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: var(--text);
       font-family: var(--font);
       font-size: 13px;
       min-height: 100vh;
       overflow-x: hidden
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     /* scrollbar */
@@ -107,12 +115,13 @@
     }
 
     .logo-name {
-      font-weight: 700;
-      font-size: 16px;
-      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      font-weight: 600;
+      font-size: 18px;
+      font-family: 'EB Garamond', serif;
+      background: linear-gradient(90deg, #ffffff, #a1a1aa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      letter-spacing: -0.3px
+      letter-spacing: 0.5px
     }
 
     .logo-tag {
@@ -221,7 +230,8 @@
       min-width: 220px;
       max-width: 220px;
       flex-shrink: 0;
-      background: var(--bg2);
+      background: rgba(10, 12, 16, 0.4);
+      backdrop-filter: blur(24px);
       border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
@@ -267,11 +277,24 @@
     }
 
     .nav-item.active {
-      background: linear-gradient(135deg, #1d4ed8, #3B82F6);
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
       color: #fff;
-      border-color: transparent;
-      box-shadow: 0 3px 14px rgba(59, 130, 246, 0.35);
-      font-weight: 600
+      border-color: var(--border3);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      font-weight: 600;
+      position: relative;
+    }
+    .nav-item.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 60%;
+      background: var(--cyan);
+      border-radius: 0 2px 2px 0;
+      box-shadow: 0 0 10px var(--cyan);
     }
 
     /* content */
@@ -301,11 +324,10 @@
     }
 
     .sec-title {
-      font-size: 22px;
-      font-weight: 700;
-      background: linear-gradient(90deg, var(--text), var(--blue2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--text);
       margin-bottom: 4px
     }
 
@@ -324,14 +346,15 @@
     }
 
     .card {
-      background: var(--bg2);
+      background: rgba(13, 15, 18, 0.4);
+      backdrop-filter: blur(12px);
       border: 1px solid var(--border);
       border-radius: var(--rl);
       padding: 1rem 1.1rem;
       position: relative;
       overflow: hidden;
-      transition: border-color .2s, box-shadow .2s;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3)
+      transition: all .3s ease;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4)
     }
 
     .card:hover {
@@ -394,12 +417,13 @@
 
     /* panel */
     .panel {
-      background: var(--bg2);
+      background: rgba(13, 15, 18, 0.4);
+      backdrop-filter: blur(16px);
       border: 1px solid var(--border);
       border-radius: var(--rl);
       padding: 1.25rem;
       margin-bottom: 1rem;
-      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25)
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4)
     }
 
     .panel-title {
@@ -537,14 +561,31 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #1d4ed8, var(--blue));
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
-      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35)
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.5s ease;
     }
 
     .btn-primary:hover {
-      box-shadow: 0 6px 28px rgba(59, 130, 246, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 6px 28px rgba(45, 212, 191, 0.2);
       transform: translateY(-1px)
+    }
+    .btn-primary:hover::before {
+      transform: translateX(100%);
     }
 
     .btn-primary:active {
