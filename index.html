@@ -19,9 +19,11 @@
   <body>
     <noscript>JavaScript is required to view BLACKSWAN NOVA.</noscript>
     <div id="root"></div>
-    <div id="engine-modal" style="display:none; position:fixed; inset:0; z-index:999999; background:#0d0f12;">
-      <button onclick="document.getElementById('engine-modal').style.display='none'" style="position:absolute; top:20px; right:30px; z-index:100; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); color:white; padding:10px 20px; border-radius:30px; cursor:pointer; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; backdrop-filter: blur(10px); transition: all 0.2s;">Close Engine</button>
-      <iframe src="engine.html" style="width:100%; height:100%; border:none;"></iframe>
+    <div id="engine-modal" style="display:none; position:fixed; inset:0; z-index:999999; background:#0d0f12; flex-direction:column;">
+      <iframe src="engine.html" style="width:100%; flex:1; border:none;"></iframe>
+      <div style="width:100%; padding:12px 0; display:flex; justify-content:center; background:rgba(10,12,16,0.95); border-top:1px solid rgba(255,255,255,0.08);">
+        <button onclick="document.getElementById('engine-modal').style.display='none'" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.7); padding:10px 32px; border-radius:30px; cursor:pointer; font-family:'Inter',sans-serif; font-size:12px; font-weight:500; letter-spacing:1px; backdrop-filter:blur(10px); transition:all 0.2s;">CLOSE ENGINE</button>
+      </div>
     </div>
     <script>
       // Use capturing-phase event delegation — this fires BEFORE React's handlers
@@ -58,7 +60,7 @@
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
-            document.getElementById('engine-modal').style.display = 'block';
+            document.getElementById('engine-modal').style.display = 'flex';
             return;
           }
           el = el.parentElement;

@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js">
 
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  <!-- Supabase removed: project is paused/dead -->
 
   </script>
   <style>
@@ -3153,7 +3153,18 @@
     // ── BOOT ──────────────────────────────────────────────────────────────────
     const SUPABASE_URL = "https://pnjfbhgztzjkuhowbayu.supabase.co";
     const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuamZiaGd6dHpqa3Vob3diYXl1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5NTk2NjUsImV4cCI6MjA5MjUzNTY2NX0.ZgDU6wkgBu5oQu8CYvCzpxIGXQMc6qG3v39RKFeNsQg"; // anon key (safe for client)
-    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    // Supabase project is paused — create a stub so financials calls don't crash
+    let supabaseClient;
+    try {
+      if (window.supabase) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      } else {
+        throw new Error('Supabase SDK not loaded');
+      }
+    } catch(e) {
+      console.warn('Supabase unavailable:', e.message);
+      supabaseClient = { from: () => ({ select: () => ({ eq: () => ({ order: () => Promise.resolve({ data: null, error: { message: 'Supabase project paused' } }) }) }) }) };
+    }
 
 
     // --- BYPASS SUPABASE FETCH FOR SPEED ---
