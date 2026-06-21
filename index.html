@@ -24,45 +24,65 @@
       <iframe src="engine.html" style="width:100%; height:100%; border:none;"></iframe>
     </div>
     <script>
-      setInterval(() => {
-        // Hijack the main navigation/hero links
-        const links = document.querySelectorAll('a, button');
-        links.forEach(link => {
-          const text = link.textContent.toUpperCase();
-          if ((text.includes('INITIALIZE') || text.includes('ACCESS') || text.includes('ENGINE')) && !link.dataset.hijacked) {
-            link.dataset.hijacked = 'true';
-            
-            // Rebuild the element to completely strip React listeners
-            const newLink = link.cloneNode(true);
-            newLink.onclick = (e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              document.getElementById('engine-modal').style.display = 'block';
-            };
-            if(newLink.tagName === 'BUTTON') newLink.type = 'button';
-            newLink.textContent = 'INITIALIZE ENGINE';
-            link.parentNode.replaceChild(newLink, link);
+      // Use capturing-phase event delegation — this fires BEFORE React's handlers
+      // and cannot be overwritten by React re-renders.
+      document.addEventListener('click', function(e) {
+        var el = e.target;
+        // Walk up the DOM tree to find the actual link/button
+        while (el && el !== document) {
+          var testId = el.getAttribute('data-testid') || '';
+          var text = (el.textContent || '').toUpperCase();
+          var href = (el.getAttribute('href') || '');
+          
+          // Match by data-testid (most reliable)
+          var isTarget = (
+            testId === 'hero-cta-access' ||
+            testId === 'waitlist-submit-button' ||
+            testId === 'nav-access' ||
+            testId === 'nav-engine'
+          );
+          
+          // Match by href
+          if (!isTarget && (href === '#access' || href === '#engine')) {
+            isTarget = true;
+          }
+          
+          // Match by text content (only for links/buttons, not entire sections)
+          if (!isTarget && (el.tagName === 'A' || el.tagName === 'BUTTON')) {
+            if (text.includes('EARLY ACCESS') || text.includes('INITIALIZE ENGINE') || text.includes('REQUEST EARLY') || text.includes('JOIN WAITLIST')) {
+              isTarget = true;
+            }
+          }
+          
+          if (isTarget) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            document.getElementById('engine-modal').style.display = 'block';
+            return;
+          }
+          el = el.parentElement;
+        }
+      }, true); // <-- 'true' = capturing phase, fires before React
+
+      // Rename visible button text periodically (cosmetic only)
+      setInterval(function() {
+        var targets = document.querySelectorAll('[data-testid="hero-cta-access"], [data-testid="waitlist-submit-button"], [data-testid="nav-access"]');
+        targets.forEach(function(t) {
+          var spans = t.querySelectorAll('span');
+          if (spans.length > 0) {
+            spans[0].textContent = 'INITIALIZE ENGINE';
+          } else if (t.childNodes.length > 0) {
+            // Find the first text node
+            for (var i = 0; i < t.childNodes.length; i++) {
+              if (t.childNodes[i].nodeType === 3 && t.childNodes[i].textContent.trim()) {
+                t.childNodes[i].textContent = 'INITIALIZE ENGINE ';
+                break;
+              }
+            }
           }
         });
-        
-        // Also explicitly hijack known test IDs just to be absolutely sure
-        const specificTargets = document.querySelectorAll('[data-testid="hero-cta-access"], [data-testid="waitlist-submit-button"], [data-testid="nav-access"]');
-        specificTargets.forEach(target => {
-          if (!target.dataset.hijacked) {
-            target.dataset.hijacked = 'true';
-            target.textContent = 'INITIALIZE ENGINE';
-            
-            const newTarget = target.cloneNode(true);
-            newTarget.onclick = (e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              document.getElementById('engine-modal').style.display = 'block';
-            };
-            if(newTarget.tagName === 'BUTTON') newTarget.type = 'button';
-            target.parentNode.replaceChild(newTarget, target);
-          }
-        });
-      }, 500);
+      }, 800);
     </script>
   <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0ec0a318ceb7e41',t:'MTc4MTk3MTc4Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
