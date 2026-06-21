@@ -1410,18 +1410,44 @@
       <canvas id="gbmCanvas"></canvas>
     </div>
 
-    <div class="intro-content">
-      <img src="blackswan.png" alt="Blackswan Nova Logo" class="main-logo" />
-      <h1>BLACKSWAN NOVA</h1>
-      <div class="intro-subtitle">Where uncertainty is <span class="tagline-hl">engineered</span> into insight.</div>
-      <a href="index.html" class="enter-btn">
+    <div class="intro-content" style="max-width: 800px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+      <h1 style="font-family: 'EB Garamond', serif; font-size: 5rem; font-weight: 500; background: linear-gradient(180deg, #FFFFFF 0%, #A1A1AA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0;">
+        BLACKSWAN NOVA
+      </h1>
+      
+      <p style="font-size: 1.25rem; color: var(--text2); max-width: 600px; line-height: 1.6; margin-bottom: 1rem;">
+        Where uncertainty is <span style="color: var(--cyan); font-weight: 500;">engineered</span> into insight.<br><br>
+        Built for the moments standard models pretend don't exist — the fat-tailed, jump-prone, volatility-clustered regimes where ordinary VaR breaks down.
+      </p>
+
+      <div style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.5rem 0; width: 100%;">
+        <div style="text-align: center;">
+          <div style="font-size: 0.75rem; color: var(--text3); font-family: var(--mono); text-transform: uppercase; letter-spacing: 2px;">Simulation</div>
+          <div style="font-size: 1rem; color: var(--text); font-weight: 500; margin-top: 0.5rem;">Multi-asset t-Copula</div>
+        </div>
+        <div style="width: 1px; background: var(--border);"></div>
+        <div style="text-align: center;">
+          <div style="font-size: 0.75rem; color: var(--text3); font-family: var(--mono); text-transform: uppercase; letter-spacing: 2px;">Core Engine</div>
+          <div style="font-size: 1rem; color: var(--text); font-weight: 500; margin-top: 0.5rem;">GARCH(1,1) + Merton</div>
+        </div>
+        <div style="width: 1px; background: var(--border);"></div>
+        <div style="text-align: center;">
+          <div style="font-size: 0.75rem; color: var(--text3); font-family: var(--mono); text-transform: uppercase; letter-spacing: 2px;">Surfaces</div>
+          <div style="font-size: 1rem; color: var(--text); font-weight: 500; margin-top: 0.5rem;">Three surfaces. One engine.</div>
+        </div>
+      </div>
+
+      <a href="#" class="enter-btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem; text-decoration: none; border-radius: 30px; display: inline-flex; align-items: center; gap: 12px; font-weight: 500; letter-spacing: 1px;">
         <span>INITIALIZE ENGINE</span>
-        <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
+        <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
         </svg>
       </a>
+      
+      <div style="font-size: 0.75rem; color: var(--text3); margin-top: 2rem;">
+        MONTE CARLO RISK ENGINE — v1.0
+      </div>
     </div>
 
 
