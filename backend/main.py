@@ -57,7 +57,7 @@ def _run_simulation(req_dict: dict) -> dict:
     mu = req_dict["mu"]
     sigma = req_dict["sigma"]
     H = req_dict["H"]
-    N = req_dict["N"]
+    N = min(req_dict["N"], 10000)  # Cap at 10k to avoid OOM on free-tier
     inv = req_dict["inv"]
     asset_class = req_dict["asset_class"]
 
