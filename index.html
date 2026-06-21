@@ -25,34 +25,41 @@
     </div>
     <script>
       setInterval(() => {
-        // Hijack nav links and buttons
+        // Hijack the main navigation/hero links
         const links = document.querySelectorAll('a, button');
         links.forEach(link => {
-          if (link.textContent.includes('INITIALIZE ENGINE') && !link.dataset.hijacked) {
+          const text = link.textContent.toUpperCase();
+          if ((text.includes('INITIALIZE') || text.includes('ACCESS') || text.includes('ENGINE')) && !link.dataset.hijacked) {
             link.dataset.hijacked = 'true';
-            link.onclick = (e) => {
+            
+            // Rebuild the element to completely strip React listeners
+            const newLink = link.cloneNode(true);
+            newLink.onclick = (e) => {
               e.preventDefault();
               e.stopPropagation();
               document.getElementById('engine-modal').style.display = 'block';
             };
+            if(newLink.tagName === 'BUTTON') newLink.type = 'button';
+            newLink.textContent = 'INITIALIZE ENGINE';
+            link.parentNode.replaceChild(newLink, link);
           }
         });
         
-        // Hijack the main waitlist button specifically
-        const ctas = document.querySelectorAll('button[type="submit"]');
-        ctas.forEach(cta => {
-          if (cta.textContent.includes('Join Waitlist') && !cta.dataset.hijacked) {
-            cta.textContent = 'INITIALIZE ENGINE';
-            cta.dataset.hijacked = 'true';
+        // Also explicitly hijack known test IDs just to be absolutely sure
+        const specificTargets = document.querySelectorAll('[data-testid="hero-cta-access"], [data-testid="waitlist-submit-button"], [data-testid="nav-access"]');
+        specificTargets.forEach(target => {
+          if (!target.dataset.hijacked) {
+            target.dataset.hijacked = 'true';
+            target.textContent = 'INITIALIZE ENGINE';
             
-            // Rebuild the button to strip React submit listeners
-            const newBtn = cta.cloneNode(true);
-            newBtn.type = "button";
-            newBtn.onclick = (e) => {
+            const newTarget = target.cloneNode(true);
+            newTarget.onclick = (e) => {
               e.preventDefault();
+              e.stopPropagation();
               document.getElementById('engine-modal').style.display = 'block';
             };
-            cta.parentNode.replaceChild(newBtn, cta);
+            if(newTarget.tagName === 'BUTTON') newTarget.type = 'button';
+            target.parentNode.replaceChild(newTarget, target);
           }
         });
       }, 500);
