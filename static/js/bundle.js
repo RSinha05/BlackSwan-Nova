@@ -338,7 +338,7 @@ const Hero = ({
             href: "#access",
             className: "group inline-flex items-center gap-3 bg-electric text-bg px-6 py-3.5 font-mono text-xs uppercase tracking-widest2 hover:bg-white transition-colors",
             "data-testid": "hero-cta-access",
-            children: ["Get Early Access", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: ["INITIALIZE ENGINE", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
               className: "w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
             }, void 0, false, {
               fileName: _jsxFileName,
@@ -1294,7 +1294,7 @@ const Access = ({
           columnNumber: 9
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxDEV)("h2", {
           className: "font-serif text-4xl md:text-5xl leading-[1.05] text-white",
-          children: "Join the early access cohort."
+          children: "Launch the Monte Carlo Risk Engine."
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 565,
