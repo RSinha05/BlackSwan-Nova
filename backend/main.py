@@ -57,15 +57,13 @@ def _run_simulation(req_dict: dict) -> dict:
     mu = req_dict["mu"]
     sigma = req_dict["sigma"]
     H = req_dict["H"]
-    N = min(req_dict["N"], 10000)  # Cap at 10k to avoid OOM on free-tier
+    N = req_dict["N"]
     inv = req_dict["inv"]
     asset_class = req_dict["asset_class"]
 
     T = H * 252
-    
-    # ── Pre-generate ALL random numbers in bulk ──
-    Z = np.random.randn(N, T)
-    
+    # Memory optimization: We generate Z_t step-by-step instead of a massive N x T array
+    # Z = np.random.randn(N, T)
     # GARCH(1,1) Parameters
     alpha = 0.09
     beta = 0.90
@@ -77,9 +75,7 @@ def _run_simulation(req_dict: dict) -> dict:
         lambda_j = 4.0 / 252
         mu_j = -0.08
         sigma_j = 0.06
-        # Pre-generate all jump data in bulk
-        all_jumps = np.random.poisson(lambda_j, (N, T))
-        all_jump_normals = np.random.normal(mu_j, sigma_j, (N, T))
+        # Jump data will be generated step-by-step inside the loop
     else:
         lambda_j = 0
     
@@ -99,11 +95,17 @@ def _run_simulation(req_dict: dict) -> dict:
     mu_daily = mu / 252
     
     for t in range(T):
+        # Generate random variables for just this day
+        Z_t = np.random.randn(N)
+        
         sigma_t = np.sqrt(sigma_sq)
-        diffusion = (mu_daily - 0.5 * sigma_sq) + sigma_t * Z[:, t]
+        diffusion = (mu_daily - 0.5 * sigma_sq) + sigma_t * Z_t
         
         if lambda_j > 0:
-            jump_sizes = all_jump_normals[:, t] * all_jumps[:, t]
+            # Generate jumps for just this day
+            jumps_t = np.random.poisson(lambda_j, N)
+            jump_normals_t = np.random.normal(mu_j, sigma_j, N)
+            jump_sizes = jumps_t * jump_normals_t
         else:
             jump_sizes = 0
             
@@ -114,8 +116,10 @@ def _run_simulation(req_dict: dict) -> dict:
         render_paths[:, t + 1] = render_paths[:, t] * np.exp(log_ret[render_mask])
         
         # GARCH Update
-        epsilon = log_ret - mu_daily
-        sigma_sq = omega + alpha * (epsilon**2) + beta * sigma_sq
+        innovation = sigma_t * Z_t
+        sigma_sq = omega + alpha * (innovation**2) + beta * sigma_sq
+        # Safety cap at 500% annualized vol to prevent numerical overflow in extreme tail paths
+        np.clip(sigma_sq, a_min=None, a_max=(5.0**2)/252, out=sigma_sq)
 
     # ── Terminal values for ALL paths ──
     finals = S0 * np.exp(cum_log_ret)
